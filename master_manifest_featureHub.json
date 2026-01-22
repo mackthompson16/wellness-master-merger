@@ -2797,7 +2797,7 @@
           "url": ""
         },
         "resilienceReps": {
-          "analyticsName": "State|Domain|resilienceReps",
+          "analyticsName": "PATH|resilienceReps",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2806,7 +2806,7 @@
           "url": "resilienceReps"
         },
         "resilienceRepsChooseHard": {
-          "analyticsName": "State|Domain|resilienceRepsChooseHard",
+          "analyticsName": "PATH|resilienceRepsChooseHard",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2815,7 +2815,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_resilienceRepsChooseHard.json"
         },
         "resilienceRepsInstructions": {
-          "analyticsName": "State|Domain|resilienceRepsInstructions",
+          "analyticsName": "PATH|resilienceRepsInstructions",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2824,7 +2824,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_resilienceRepsInstructions.json"
         },
         "resilienceRepsJournal": {
-          "analyticsName": "State|Domain|resilienceRepsJournal",
+          "analyticsName": "PATH|resilienceRepsJournal",
           "appID": "changeMe",
           "image": "",
           "subtypes": [
@@ -2835,7 +2835,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_resilienceRepsJournal.json"
         },
         "preHabRecoveryPosts": {
-          "analyticsName": "State|Domain|preHabRecoveryPosts",
+          "analyticsName": "PATH|preHabRecoveryPosts",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [
@@ -2847,7 +2847,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/blog_preHabRecoveryPosts.json"
         },
         "recoveryAfterIntenseShift": {
-          "analyticsName": "State|Domain|recoveryAfterIntenseShift",
+          "analyticsName": "PATH|recoveryAfterIntenseShift",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [
@@ -2859,7 +2859,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/blog_recoveryAfterIntenseShift.json"
         },
         "preHabRecoveryPostsSubmenu": {
-          "analyticsName": "State|Domain|preHabRecoveryPostsSubmenu",
+          "analyticsName": "PATH|preHabRecoveryPostsSubmenu",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -2868,7 +2868,7 @@
           "url": "preHabRecoveryPostsSubmenu"
         },
         "actionsPsychologicalFirstAidStep1": {
-          "analyticsName": "State|Domain|psychologicalFirstAidStep1",
+          "analyticsName": "PATH|psychologicalFirstAidStep1",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "imageURL": "",
@@ -2880,7 +2880,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_actionsPsychologicalFirstAidSteps12.json"
         },
         "actionsPsychologicalFirstAidStep2": {
-          "analyticsName": "State|Domain|psychologicalFirstAidStep2",
+          "analyticsName": "PATH|psychologicalFirstAidStep2",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "imageURL": "",
@@ -2892,7 +2892,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_actionsPsychologicalFirstAidStep2.json"
         },
         "activitiesForMindAndBodyArticles": {
-          "analyticsName": "State|Domain|mindAndBodyHobbies",
+          "analyticsName": "PATH|mindAndBodyHobbies",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2901,7 +2901,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_mindAndBodyHobbies.json"
         },
         "activitiesMindBodySimcastAudioPlaylist": {
-          "analyticsName": "State|Domain|mindBodyHobbiesAudioPlaylist",
+          "analyticsName": "PATH|mindBodyHobbiesAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2910,7 +2910,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_mindBodyHobbiesAudioPlaylist.json"
         },
         "beginnerWorkouts2": {
-          "analyticsName": "State|Domain|beginnerWorkouts2",
+          "analyticsName": "PATH|beginnerWorkouts2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2919,7 +2919,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_beginnerWorkouts.json"
         },
         "breakfastGallery": {
-          "analyticsName": "State|Domain|breakfastGallery",
+          "analyticsName": "PATH|breakfastGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2928,7 +2928,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_breakfast.json"
         },
         "buildingWellnessProgram": {
-          "analyticsName": "State|Domain|buildingWellnessProgram",
+          "analyticsName": "PATH|buildingWellnessProgram",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2937,7 +2937,7 @@
           "url": "buildingWellnessProgram"
         },
         "burgerKingGallery": {
-          "analyticsName": "State|Domain|burgerKing",
+          "analyticsName": "PATH|burgerKing",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2946,7 +2946,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_burgerKing.json"
         },
         "byMealTime": {
-          "analyticsName": "State|Domain|byMealTime",
+          "analyticsName": "PATH|byMealTime",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2955,7 +2955,7 @@
           "url": "byMealTime"
         },
         "byRestaurant": {
-          "analyticsName": "State|Domain|byRestaurant",
+          "analyticsName": "PATH|byRestaurant",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2964,7 +2964,7 @@
           "url": "byRestaurant"
         },
         "cardio2": {
-          "analyticsName": "State|Domain|cardio2",
+          "analyticsName": "PATH|cardio2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2973,7 +2973,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_cardioWorkouts.json"
         },
         "departmentChaplains": {
-          "analyticsName": "State|Domain|departmentChaplains",
+          "analyticsName": "PATH|departmentChaplains",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2982,7 +2982,7 @@
           "url": "https://cdn.myocv.com/ocvapps/changeMe/public/contact_senecaNYChaplainSupport.json"
         },
         "chipotleGallery": {
-          "analyticsName": "State|Domain|chipotleGallery",
+          "analyticsName": "PATH|chipotleGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -2991,7 +2991,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_chipotle.json"
         },
         "coWorkerSupport": {
-          "analyticsName": "State|Domain|chipotleGallery",
+          "analyticsName": "PATH|chipotleGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3000,7 +3000,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_coWorkerSupport.json"
         },
         "coWorkerSupportSubmenu": {
-          "analyticsName": "State|Domain|coWorkerSupport",
+          "analyticsName": "PATH|coWorkerSupport",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3009,7 +3009,7 @@
           "url": "coWorkerSupportSubmenu"
         },
         "composure2": {
-          "analyticsName": "State|Domain|composure2",
+          "analyticsName": "PATH|composure2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3018,7 +3018,7 @@
           "url": "composure2"
         },
         "composurePurposeInstruction": {
-          "analyticsName": "State|Domain|composurePurposeInstruction",
+          "analyticsName": "PATH|composurePurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3027,7 +3027,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_composurePurposeInstruction.json"
         },
         "compoundInterestCalculatorWeblink": {
-          "analyticsName": "State|Domain|compoundInterestCalculatorWeblink",
+          "analyticsName": "PATH|compoundInterestCalculatorWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3036,7 +3036,7 @@
           "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator"
         },
         "cookoutGallery": {
-          "analyticsName": "State|Domain|cookoutGallery",
+          "analyticsName": "PATH|cookoutGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3045,7 +3045,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_cookout.json"
         },
         "dailyPreHabPersonalizedRoutine": {
-          "analyticsName": "State|Domain|dailyPreHabPersonalizedRoutine",
+          "analyticsName": "PATH|dailyPreHabPersonalizedRoutine",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -3057,7 +3057,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_dailyPreHabPersonalizedRoutine.json"
         },
         "dailyPreHabPurposeInstruction": {
-          "analyticsName": "State|Domain|dailyPreHabPurposeInstruction",
+          "analyticsName": "PATH|dailyPreHabPurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3066,7 +3066,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_dailyPreHabPurposeInstruction.json"
         },
         "dailyPrehab2": {
-          "analyticsName": "State|Domain|dailyPrehab2",
+          "analyticsName": "PATH|dailyPrehab2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3075,7 +3075,7 @@
           "url": "dailyPrehab2"
         },
         "doJResources": {
-          "analyticsName": "State|Domain|doJResources",
+          "analyticsName": "PATH|doJResources",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3084,7 +3084,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_doJResources.json"
         },
         "drLeePublishedContent": {
-          "analyticsName": "State|Domain|drLeePublishedContent",
+          "analyticsName": "PATH|drLeePublishedContent",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3093,7 +3093,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_drLeePublishedContent.json"
         },
         "emotionRecognitionActivity": {
-          "analyticsName": "State|Domain|emotionRecognitionActivity",
+          "analyticsName": "PATH|emotionRecognitionActivity",
           "appID": "changeMe",
           "image": "",
           "subtypes": [
@@ -3104,7 +3104,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_emotionalRecognition.json"
         },
         "emotionWordList": {
-          "analyticsName": "State|Domain|emotionWordList",
+          "analyticsName": "PATH|emotionWordList",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3113,7 +3113,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_emotionWordList.json"
         },
         "emotionalIntelligence2": {
-          "analyticsName": "State|Domain|emotionalIntelligence",
+          "analyticsName": "PATH|emotionalIntelligence",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3122,7 +3122,7 @@
           "url": "emotionalIntelligence2"
         },
         "emotionalIntelligencePurposeInstructions": {
-          "analyticsName": "State|Domain|emotionalIntelligencePurposeInstructions",
+          "analyticsName": "PATH|emotionalIntelligencePurposeInstructions",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3131,7 +3131,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_emotionalIntelligencePurposeInstructions.json"
         },
         "equipmentToConsider2": {
-          "analyticsName": "State|Domain|equipmentToConsider2",
+          "analyticsName": "PATH|equipmentToConsider2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3140,7 +3140,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_equipmentToConsider.json"
         },
         "exerciseDemos2": {
-          "analyticsName": "State|Domain|exerciseDemos2",
+          "analyticsName": "PATH|exerciseDemos2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -3149,7 +3149,7 @@
           "url": "PLgFwusWe6QTpx3AhLeVmHz9nhKg1th4qc"
         },
         "exerciseList": {
-          "analyticsName": "State|Domain|exerciseList",
+          "analyticsName": "PATH|exerciseList",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3158,7 +3158,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_fullExerciseList.json"
         },
         "exerciseMentalHealth2": {
-          "analyticsName": "State|Domain|exerciseMentalHealth2",
+          "analyticsName": "PATH|exerciseMentalHealth2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -3167,7 +3167,7 @@
           "url": "exerciseMentalHealth2"
         },
         "exerciseMentalHealthArticles": {
-          "analyticsName": "State|Domain|exerciseMentalHealth2",
+          "analyticsName": "PATH|exerciseMentalHealth2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -3176,7 +3176,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_exerciseMentalHealth.json"
         },
         "financialHealthAssessment": {
-          "analyticsName": "State|Domain|financialHealthAssessment",
+          "analyticsName": "PATH|financialHealthAssessment",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3185,7 +3185,7 @@
           "url": "https://usaaef.org/plan/financial-health-assessment/"
         },
         "financialPlanningSubmenu": {
-          "analyticsName": "State|Domain|financialPlanningSubmenu",
+          "analyticsName": "PATH|financialPlanningSubmenu",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3194,7 +3194,7 @@
           "url": "financialPlanning"
         },
         "fireDepartments2": {
-          "analyticsName": "State|Domain|fireDepartments2",
+          "analyticsName": "PATH|fireDepartments2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3203,7 +3203,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_buildingWellnessProgramFireDepartments.json"
         },
         "fireRescueArticles": {
-          "analyticsName": "State|Domain|fireRescueArticles",
+          "analyticsName": "PATH|fireRescueArticles",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3212,7 +3212,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_fireRescueArticles.json"
         },
         "fireRescueAudioPlaylist": {
-          "analyticsName": "State|Domain|fireRescueAudioPlaylist",
+          "analyticsName": "PATH|fireRescueAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3221,7 +3221,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_fireRescueAudioPlaylist.json"
         },
         "firstAidPurposeInstructions": {
-          "analyticsName": "State|Domain|firstAidPurposeInstructions",
+          "analyticsName": "PATH|firstAidPurposeInstructions",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3230,7 +3230,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_firstAidPurposeInstructions.json"
         },
         "fitFaqs2": {
-          "analyticsName": "State|Domain|fitFaqs2",
+          "analyticsName": "PATH|fitFaqs2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3239,7 +3239,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/blog_fitFAQs.json"
         },
         "fitPosts": {
-          "analyticsName": "State|Domain|fitPosts",
+          "analyticsName": "PATH|fitPosts",
           "appID": "changeMe",
           "image": "",
           "subtypes": [
@@ -3251,7 +3251,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/blog_fitPosts.json"
         },
         "fitStationGroupMeals": {
-          "analyticsName": "State|Domain|fitStationGroupMeals",
+          "analyticsName": "PATH|fitStationGroupMeals",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3260,7 +3260,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_fitFireHouseGroupMeals.json"
         },
         "fitSubmenu2": {
-          "analyticsName": "State|Domain|fitSubmenu2",
+          "analyticsName": "PATH|fitSubmenu2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3269,7 +3269,7 @@
           "url": "fit2"
         },
         "fitTalksAudioPlaylist": {
-          "analyticsName": "State|Domain|fitTalksAudioPlaylist",
+          "analyticsName": "PATH|fitTalksAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3278,7 +3278,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_fitTalksAudioPlaylist.json"
         },
         "focusConcentration2": {
-          "analyticsName": "State|Domain|focusConcentration2",
+          "analyticsName": "PATH|focusConcentration2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3287,7 +3287,7 @@
           "url": "https://thesheriffapp.com/"
         },
         "fuelFaqs": {
-          "analyticsName": "State|Domain|fuelFaqs",
+          "analyticsName": "PATH|fuelFaqs",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3296,7 +3296,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/blog_fuelFAQs.json"
         },
         "fuelPosts": {
-          "analyticsName": "State|Domain|fuelPosts",
+          "analyticsName": "PATH|fuelPosts",
           "appID": "changeMe",
           "image": "",
           "subtypes": [
@@ -3308,7 +3308,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/blog_fuelPosts.json"
         },
         "fuelSubmenu2": {
-          "analyticsName": "State|Domain|fuelSubmenu2",
+          "analyticsName": "PATH|fuelSubmenu2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3317,7 +3317,7 @@
           "url": "fuel2"
         },
         "fuelTalksAudioPlaylist": {
-          "analyticsName": "State|Domain|fuelTalksAudioPlaylist",
+          "analyticsName": "PATH|fuelTalksAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3326,7 +3326,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_fuelTalksAudioPlaylist.json"
         },
         "fullExerciseListMobility": {
-          "analyticsName": "State|Domain|fullExerciseListMobility",
+          "analyticsName": "PATH|fullExerciseListMobility",
           "image": "",
           "subtypes": [],
           "title": "Full Exercise List",
@@ -3334,7 +3334,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_fullExerciseListMobility.json"
         },
         "fundAnalysisWebllink": {
-          "analyticsName": "State|Domain|fundAnalysisWebllink",
+          "analyticsName": "PATH|fundAnalysisWebllink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3343,7 +3343,7 @@
           "url": "https://tools.finra.org/fund_analyzer/"
         },
         "getHelpNow2": {
-          "analyticsName": "State|Domain|helpline",
+          "analyticsName": "PATH|helpline",
           "appID": "changeMe",
           "backgroundHex": "#279C00",
           "bgHex": "#279C00",
@@ -3356,7 +3356,7 @@
           "url": "https://cdn.myocv.com/ocvapps/a19336830/public/contact_emergencyHelpline.json"
         },
         "gratitude2": {
-          "analyticsName": "State|Domain|gratitude2",
+          "analyticsName": "PATH|gratitude2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3365,7 +3365,7 @@
           "url": "gratitude2"
         },
         "gratitudeActivity": {
-          "analyticsName": "State|Domain|gratitudeActivity",
+          "analyticsName": "PATH|gratitudeActivity",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -3377,7 +3377,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_gratitudeActivity.json"
         },
         "gratitudeAudioPlaylist": {
-          "analyticsName": "State|Domain|gratitudeAudioPlaylist",
+          "analyticsName": "PATH|gratitudeAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3386,7 +3386,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_gratitudeAudioPlaylist.json"
         },
         "gratitudePurposeInstruction": {
-          "analyticsName": "State|Domain|gratitudePurposeInstruction",
+          "analyticsName": "PATH|gratitudePurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3395,7 +3395,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_gratitudePurposeInstruction.json"
         },
         "guidedFourCountBreathingAudioPlaylist": {
-          "analyticsName": "State|Domain|guidedFourCountBreathingAudioPlaylist",
+          "analyticsName": "PATH|guidedFourCountBreathingAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3404,7 +3404,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_fourCountyBreathingStressMangementAudioPlaylist.json"
         },
         "habitBuilding": {
-          "analyticsName": "State|Domain|habitBuilding",
+          "analyticsName": "PATH|habitBuilding",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3413,7 +3413,7 @@
           "url": "habitBuilding"
         },
         "habitsArticle1": {
-          "analyticsName": "State|Domain|habitsArticle1",
+          "analyticsName": "PATH|habitsArticle1",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -3425,7 +3425,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_habitsArticle1.json"
         },
         "habitsArticle2": {
-          "analyticsName": "State|Domain|habitsArticle2",
+          "analyticsName": "PATH|habitsArticle2",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -3437,7 +3437,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_habitsArticle2.json"
         },
         "habitsList": {
-          "analyticsName": "State|Domain|habitsList",
+          "analyticsName": "PATH|habitsList",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -3449,7 +3449,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_habitsList.json"
         },
         "healthyRecipes": {
-          "analyticsName": "State|Domain|healthyRecipes",
+          "analyticsName": "PATH|healthyRecipes",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3458,7 +3458,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_fitFireHouseGroupMeals.json"
         },
         "iACPGallery": {
-          "analyticsName": "State|Domain|iACPGallery",
+          "analyticsName": "PATH|iACPGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3467,7 +3467,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_iACPGallery.json"
         },
         "identifyingValuesStrengths2": {
-          "analyticsName": "State|Domain|identifyingValuesStrengths2",
+          "analyticsName": "PATH|identifyingValuesStrengths2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3476,7 +3476,7 @@
           "url": "https://thesheriffapp.com/"
         },
         "investmentAdvisorPublicDisclosureWeblink": {
-          "analyticsName": "State|Domain|investmentAdvisorPublicDisclosureWeblink",
+          "analyticsName": "PATH|investmentAdvisorPublicDisclosureWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3485,7 +3485,7 @@
           "url": "https://adviserinfo.sec.gov/"
         },
         "investmentQuizWeblink": {
-          "analyticsName": "State|Domain|investmentQuizWeblink",
+          "analyticsName": "PATH|investmentQuizWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3494,7 +3494,7 @@
           "url": "https://www.investor.gov/additional-resources/spotlight/investing-quizzes"
         },
         "investorGovFinancialPlanningToolsWeblink": {
-          "analyticsName": "State|Domain|investorGovFinancialPlanningToolsWeblink",
+          "analyticsName": "PATH|investorGovFinancialPlanningToolsWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3503,7 +3503,7 @@
           "url": "https://www.investor.gov/free-financial-planning-tools"
         },
         "keepInMemoryGame": {
-          "analyticsName": "State|Domain|keepInMemoryGame",
+          "analyticsName": "PATH|keepInMemoryGame",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3512,7 +3512,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_keepInMemoryGame.json"
         },
         "lawEnforcementArticles": {
-          "analyticsName": "State|Domain|lawEnforcementArticles",
+          "analyticsName": "PATH|lawEnforcementArticles",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3521,7 +3521,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_lawEnforcementArticles.json"
         },
         "lawEnforcementAudioPlaylist": {
-          "analyticsName": "State|Domain|emergencyDispatch",
+          "analyticsName": "PATH|emergencyDispatch",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3530,7 +3530,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_lawEnforcementAudioPlaylist.json"
         },
         "leadIdeaExchange": {
-          "analyticsName": "State|Domain|leadIdeaExchange",
+          "analyticsName": "PATH|leadIdeaExchange",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3539,7 +3539,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_leadIdeaExchange.json"
         },
         "leadSubmenu2": {
-          "analyticsName": "State|Domain|leadSubmenu2",
+          "analyticsName": "PATH|leadSubmenu2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3548,7 +3548,7 @@
           "url": "lead2"
         },
         "lifeSubmenu2": {
-          "analyticsName": "State|Domain|lifeSubmenu2",
+          "analyticsName": "PATH|lifeSubmenu2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3557,7 +3557,7 @@
           "url": "life2"
         },
         "lightOnShiftWorkout2": {
-          "analyticsName": "State|Domain|lightOnShiftWorkouts2",
+          "analyticsName": "PATH|lightOnShiftWorkouts2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3566,7 +3566,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_lightOnShiftWorkout.json"
         },
         "lowerBackHip": {
-          "analyticsName": "State|Domain|lowerBackHip",
+          "analyticsName": "PATH|lowerBackHip",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3575,7 +3575,7 @@
           "url": "PLuQ0LbwSEVjI41ToHrJv3dtRfpXmluEjr&si=_45jBq4cSKAHxVpX"
         },
         "lowerLegFeet": {
-          "analyticsName": "State|Domain|lowerLegFeet",
+          "analyticsName": "PATH|lowerLegFeet",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3584,7 +3584,7 @@
           "url": "PLuQ0LbwSEVjIWsZPESq5WGKpdt-0Ii-BJ&si=FdKpw3TMeH6s-W3m"
         },
         "lunchDinnerGallery": {
-          "analyticsName": "State|Domain|lunchDinnerGallery",
+          "analyticsName": "PATH|lunchDinnerGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3593,7 +3593,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_lunchDinner.json"
         },
         "macroCountingIsnTExact": {
-          "analyticsName": "State|Domain|calorieMacroCounting",
+          "analyticsName": "PATH|calorieMacroCounting",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3602,7 +3602,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_macroCountingIsnTExact.json"
         },
         "macronutrients": {
-          "analyticsName": "State|Domain|macronutrients",
+          "analyticsName": "PATH|macronutrients",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3611,7 +3611,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_whatAreMacronutrients.json"
         },
         "macrosMicrosNutrients": {
-          "analyticsName": "State|Domain|macrosMicrosNutrients",
+          "analyticsName": "PATH|macrosMicrosNutrients",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3620,7 +3620,7 @@
           "url": "macrosMicrosNutrients"
         },
         "mattPowellIntroduces": {
-          "analyticsName": "State|Domain|mattPowellIntroduces",
+          "analyticsName": "PATH|mattPowellIntroduces",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3629,7 +3629,7 @@
           "url": "mattPowellIntroduces"
         },
         "mcdonaldsGallery": {
-          "analyticsName": "State|Domain|mcdonaldsGallery",
+          "analyticsName": "PATH|mcdonaldsGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3638,7 +3638,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_mcdonalds.json"
         },
         "mealPrepPrinciples": {
-          "analyticsName": "State|Domain|mealPrepPrinciples",
+          "analyticsName": "PATH|mealPrepPrinciples",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3647,7 +3647,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_mealPrepPrinciples.json"
         },
         "mealPrepRecipes": {
-          "analyticsName": "State|Domain|mealPrepRecipes",
+          "analyticsName": "PATH|mealPrepRecipes",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3656,7 +3656,7 @@
           "url": "mealPrepRecipes"
         },
         "meditationAfterAToughCallAudioPlaylist": {
-          "analyticsName": "State|Domain|meditationAfterAToughCallAudioPlaylist",
+          "analyticsName": "PATH|meditationAfterAToughCallAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3665,7 +3665,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_meditationAfterAToughCallAudioPlaylist.json"
         },
         "meditationsAudioPlaylist": {
-          "analyticsName": "State|Domain|meditationsAudioPlaylist",
+          "analyticsName": "PATH|meditationsAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3674,7 +3674,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_meditationsAudioPlaylist.json"
         },
         "memory2": {
-          "analyticsName": "State|Domain|memory2",
+          "analyticsName": "PATH|memory2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3683,7 +3683,7 @@
           "url": "memory2"
         },
         "mentalHealthAssessmentsWeblink": {
-          "analyticsName": "State|Domain|mentalHealthAssessmentsWeblink",
+          "analyticsName": "PATH|mentalHealthAssessmentsWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3692,7 +3692,7 @@
           "url": "https://screening.mhanational.org/screening-tools/"
         },
         "micronutrients": {
-          "analyticsName": "State|Domain|micronutrients",
+          "analyticsName": "PATH|micronutrients",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3701,7 +3701,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_whatAreMicronutrients.json"
         },
         "militaryAdvances": {
-          "analyticsName": "State|Domain|militaryAdvances",
+          "analyticsName": "PATH|militaryAdvances",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3710,7 +3710,7 @@
           "url": "militaryAdvances"
         },
         "militaryAdvancesSimcastAudioPlaylist": {
-          "analyticsName": "State|Domain|militaryAdvancesSimcastAudioPlaylist",
+          "analyticsName": "PATH|militaryAdvancesSimcastAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3719,7 +3719,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_militaryAdvancesSimcastAudioPlaylist.json"
         },
         "mindSubmenu2": {
-          "analyticsName": "State|Domain|mindSubmenu2",
+          "analyticsName": "PATH|mindSubmenu2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3728,7 +3728,7 @@
           "url": "mind2"
         },
         "mindfulnessOverview": {
-          "analyticsName": "State|Domain|mindfulnessOverview",
+          "analyticsName": "PATH|mindfulnessOverview",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3737,7 +3737,7 @@
           "url": "mindfulnessOverview"
         },
         "minimumDistributionCalculatorWeblink": {
-          "analyticsName": "State|Domain|minimumDistributionCalculatorWeblink",
+          "analyticsName": "PATH|minimumDistributionCalculatorWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3746,7 +3746,7 @@
           "url": "https://www.investor.gov/financial-tools-calculators/calculators/required-minimum-distribution-calculator"
         },
         "mirrorExercise": {
-          "analyticsName": "State|Domain|mirrorExercise",
+          "analyticsName": "PATH|mirrorExercise",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3755,7 +3755,7 @@
           "url": "mirrorExercise"
         },
         "mirrorExerciseActivity": {
-          "analyticsName": "State|Domain|mirrorExerciseActivity",
+          "analyticsName": "PATH|mirrorExerciseActivity",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -3767,7 +3767,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_mirrorExercisePurposeInstruction.json"
         },
         "mirrorExercisePurposeInstruction": {
-          "analyticsName": "State|Domain|mirrorExercisePurposeInstruction",
+          "analyticsName": "PATH|mirrorExercisePurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3776,7 +3776,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_mirrorExercisePurposeInstruction.json"
         },
         "mobility2": {
-          "analyticsName": "State|Domain|mobility2",
+          "analyticsName": "PATH|mobility2",
           "appID": "changeMe",
           "subtypes": [],
           "title": "Mobility",
@@ -3784,7 +3784,7 @@
           "url": "mobility2"
         },
         "mobilityBackHipUpperLeg": {
-          "analyticsName": "State|Domain|mobilityBackHipUpperLeg",
+          "analyticsName": "PATH|mobilityBackHipUpperLeg",
           "image": "",
           "subtypes": [],
           "title": "Back, Hip & Upper Leg",
@@ -3792,7 +3792,7 @@
           "url": "PLuQ0LbwSEVjIFRRgoix-GtYwwM7u_hZMe"
         },
         "mobilityLowerLegFeet": {
-          "analyticsName": "State|Domain|mobilityLowerLegFeet",
+          "analyticsName": "PATH|mobilityLowerLegFeet",
           "image": "",
           "subtypes": [],
           "title": "Lower Leg & Feet",
@@ -3800,7 +3800,7 @@
           "url": "PLuQ0LbwSEVjKTaU-tCDYkFB79dsWhyQoG"
         },
         "mobilityNeckTrapsShoulder": {
-          "analyticsName": "State|Domain|mobilityNeckTrapsShoulder",
+          "analyticsName": "PATH|mobilityNeckTrapsShoulder",
           "image": "",
           "subtypes": [],
           "title": "Neck, Traps & Shoulder",
@@ -3808,7 +3808,7 @@
           "url": "PLuQ0LbwSEVjIjy-grSt5TI8cQLuj7WP6F"
         },
         "neckTrapShoulders": {
-          "analyticsName": "State|Domain|neckTrapShoulders",
+          "analyticsName": "PATH|neckTrapShoulders",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3817,7 +3817,7 @@
           "url": "PLuQ0LbwSEVjJdIppTylfwYdc8H4hKF3bg&si=4_9n_vX2PP3C-d0q"
         },
         "nonProfitAndSpecializedTreatment2": {
-          "analyticsName": "State|Domain|nonProfitAndSpecializedTreatment2",
+          "analyticsName": "PATH|nonProfitAndSpecializedTreatment2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3826,7 +3826,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_nonProfitSpecializedTreatment.json"
         },
         "pFAStep4AModifiedProgressiveMuscleRelaxation": {
-          "analyticsName": "State|Domain|pFAStep4AModifiedProgressiveMuscleRelaxation",
+          "analyticsName": "PATH|pFAStep4AModifiedProgressiveMuscleRelaxation",
           "appID": "changeMe",
           "detailButtons": [
             {
@@ -3843,7 +3843,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4AModifiedProgressiveMuscleRelaxation.json"
         },
         "pFAStep4BreathingRhythmically": {
-          "analyticsName": "State|Domain|pFAStep4BreathingRhythmically",
+          "analyticsName": "PATH|pFAStep4BreathingRhythmically",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3852,7 +3852,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4BreathingRhythmically.json"
         },
         "pFAStep4ChallengingYourThinking": {
-          "analyticsName": "State|Domain|pFAStep4ChallengingYourThinking",
+          "analyticsName": "PATH|pFAStep4ChallengingYourThinking",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3861,7 +3861,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4ChallengingYourThinking.json"
         },
         "pFAStep4FindingTheGood": {
-          "analyticsName": "State|Domain|pFAStep4FindingTheGood",
+          "analyticsName": "PATH|pFAStep4FindingTheGood",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3870,7 +3870,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4FindingTheGood.json"
         },
         "pFAStep4ForgivingYourself": {
-          "analyticsName": "State|Domain|pFAStep4ForgivingYourself",
+          "analyticsName": "PATH|pFAStep4ForgivingYourself",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3879,7 +3879,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4ForgivingYourself.json"
         },
         "pFAStep4GettingYourHeartRateUp": {
-          "analyticsName": "State|Domain|pFAStep4GettingYourHeartRateUp",
+          "analyticsName": "PATH|pFAStep4GettingYourHeartRateUp",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3888,7 +3888,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4GettingYourHeartRateUp.json"
         },
         "pFAStep4GroundingWithYourSenses": {
-          "analyticsName": "State|Domain|pFAStep4GroundingWithYourSenses",
+          "analyticsName": "PATH|pFAStep4GroundingWithYourSenses",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3897,7 +3897,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4GroundingWithYourSenses.json"
         },
         "pFAStep4NamingWhatSHappening": {
-          "analyticsName": "State|Domain|pFAStep4NamingWhatSHappening",
+          "analyticsName": "PATH|pFAStep4NamingWhatSHappening",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3906,7 +3906,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4NamingWhatSHappening.json"
         },
         "pFAStep4OverridingUnhelpfulPatterns": {
-          "analyticsName": "State|Domain|pFAStep4OverridingUnhelpfulPatterns",
+          "analyticsName": "PATH|pFAStep4OverridingUnhelpfulPatterns",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3915,7 +3915,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4OverridingUnhelpfulPatterns.json"
         },
         "pFAStep4ReleasingWhatYouHaveBeenAvoiding": {
-          "analyticsName": "State|Domain|pFAStep4ReleasingWhatYouHaveBeenAvoiding",
+          "analyticsName": "PATH|pFAStep4ReleasingWhatYouHaveBeenAvoiding",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3924,7 +3924,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4ReleasingWhatYouHaveBeenAvoiding.json"
         },
         "pFAStep4SettingAPurposeDrivenGoal": {
-          "analyticsName": "State|Domain|pFAStep4SettingAPurposeDrivenGoal",
+          "analyticsName": "PATH|pFAStep4SettingAPurposeDrivenGoal",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3933,7 +3933,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_pFAStep4SettingAPurposeDrivenGoal.json"
         },
         "paneraGallery": {
-          "analyticsName": "State|Domain|paneraGallery",
+          "analyticsName": "PATH|paneraGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3942,7 +3942,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_panera.json"
         },
         "patrolmenDispatchWeblink": {
-          "analyticsName": "State|Domain|patrolmenDispatchWeblink",
+          "analyticsName": "PATH|patrolmenDispatchWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3951,7 +3951,7 @@
           "url": "https://patrolmensdispatch.com/financial-wellness/"
         },
         "peerSupport2": {
-          "analyticsName": "State|Domain|peerSupport",
+          "analyticsName": "PATH|peerSupport",
           "appID": "changeMe",
           "image": "handshake_filled",
           "subtypes": [],
@@ -3960,7 +3960,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_wellness20DepartmentResources.json"
         },
         "popularDiets2": {
-          "analyticsName": "State|Domain|popularDiets2",
+          "analyticsName": "PATH|popularDiets2",
           "appID": "changeMe",
           "image": "",
           "submenuID": "popularDiets2",
@@ -3970,7 +3970,7 @@
           "url": ""
         },
         "popularFadDiets": {
-          "analyticsName": "State|Domain|popularFadDiets",
+          "analyticsName": "PATH|popularFadDiets",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3979,7 +3979,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_popularFadDiets.json"
         },
         "postWorkoutCooldown2": {
-          "analyticsName": "State|Domain|postWorkoutCooldown2",
+          "analyticsName": "PATH|postWorkoutCooldown2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3988,7 +3988,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_postWorkoutCooldown.json"
         },
         "powellPerformanceSBigRocks": {
-          "analyticsName": "State|Domain|powellPerformanceSBigRocks",
+          "analyticsName": "PATH|powellPerformanceSBigRocks",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -3997,7 +3997,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_powellPerformanceSBigRocks.json"
         },
         "preBuiltRoutins": {
-          "analyticsName": "State|Domain|preBuiltRoutins",
+          "analyticsName": "PATH|preBuiltRoutins",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4006,7 +4006,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_preBuiltRoutines.json"
         },
         "progressiveMuscleRelaxationAudioPlaylist": {
-          "analyticsName": "State|Domain|progressiveMuscleRelaxationAudioPlaylist",
+          "analyticsName": "PATH|progressiveMuscleRelaxationAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4015,7 +4015,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_progressiveMuscleRelaxationAudioPlaylist.json"
         },
         "progressiveRelaxationExercise": {
-          "analyticsName": "State|Domain|progressiveRelaxationExercise",
+          "analyticsName": "PATH|progressiveRelaxationExercise",
           "appID": "changeMe",
           "image": "",
           "subtype": "0",
@@ -4024,7 +4024,7 @@
           "url": "https://cdn.myocv.com/ocvapps/ocv-files/RelaxExerciseProgressivebySteveSprinkle+(1).mp3"
         },
         "psychologicalFirstAid2": {
-          "analyticsName": "State|Domain|psychologicalFirstAid2",
+          "analyticsName": "PATH|psychologicalFirstAid2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4033,7 +4033,7 @@
           "url": "psychologicalFirstAid2"
         },
         "psychologicalFirstAidStep3": {
-          "analyticsName": "State|Domain|psychologicalFirstAidStep3",
+          "analyticsName": "PATH|psychologicalFirstAidStep3",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "imageURL": "",
@@ -4045,7 +4045,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_psychologicalFirstAidStep3.json"
         },
         "psychologicalFirstAidStep4": {
-          "analyticsName": "State|Domain|psychologicalFirstAidStep4",
+          "analyticsName": "PATH|psychologicalFirstAidStep4",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4054,7 +4054,7 @@
           "url": "psychologicalFirstAidStep4"
         },
         "psychologicalFirstAidStep5": {
-          "analyticsName": "State|Domain|psychologicalFirstAidStep5",
+          "analyticsName": "PATH|psychologicalFirstAidStep5",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "imageURL": "",
@@ -4066,7 +4066,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_psychologicalFirstAidStep5.json"
         },
         "ptsdResourceVideos2": {
-          "analyticsName": "State|Domain|ptsdResourceVideos2",
+          "analyticsName": "PATH|ptsdResourceVideos2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4075,7 +4075,7 @@
           "url": "PLuQ0LbwSEVjIFlaxusZMYviUxTqqFYAwf"
         },
         "ptsdScreening2": {
-          "analyticsName": "State|Domain|ptsdScreening2",
+          "analyticsName": "PATH|ptsdScreening2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4084,7 +4084,7 @@
           "url": "https://screening.mhanational.org/screening-tools/ptsd/?ref"
         },
         "reboundingFromFailure": {
-          "analyticsName": "State|Domain|reboundingFromFailure",
+          "analyticsName": "PATH|reboundingFromFailure",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4093,7 +4093,7 @@
           "url": "reboundingFromFailure"
         },
         "reboundingFromFailurePurposeInstruction": {
-          "analyticsName": "State|Domain|reboundingFromFailurePurposeInstruction",
+          "analyticsName": "PATH|reboundingFromFailurePurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4102,7 +4102,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_reboundingFromFailurePurposeInstruction.json"
         },
         "recoveryNutrition2": {
-          "analyticsName": "State|Domain|recoveryNutrition2",
+          "analyticsName": "PATH|recoveryNutrition2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4111,7 +4111,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_recoveryNutrition.json"
         },
         "reducingStigma2": {
-          "analyticsName": "State|Domain|reducingStigma2",
+          "analyticsName": "PATH|reducingStigma2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4120,7 +4120,7 @@
           "url": "reducingStigma2"
         },
         "researchABrokerWeblink": {
-          "analyticsName": "State|Domain|researchABrokerWeblink",
+          "analyticsName": "PATH|researchABrokerWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4129,7 +4129,7 @@
           "url": "https://brokercheck.finra.org/"
         },
         "researchingSupplements": {
-          "analyticsName": "State|Domain|researchingSupplement",
+          "analyticsName": "PATH|researchingSupplement",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4138,7 +4138,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_researchingSupplements.json"
         },
         "resilienceVideos": {
-          "analyticsName": "State|Domain|resilienceVideos",
+          "analyticsName": "PATH|resilienceVideos",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4147,7 +4147,7 @@
           "url": "PLuQ0LbwSEVjJ9bMNA0YuahQSI5-MbadHY"
         },
         "responderFamily": {
-          "analyticsName": "State|Domain|responderFamily",
+          "analyticsName": "PATH|responderFamily",
           "appID": "changeMe",
           "image": "",
           "subtypes": [
@@ -4158,7 +4158,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_responderFamily.json"
         },
         "responderFamilySubmenu": {
-          "analyticsName": "State|Domain|responderFamilySubmenu",
+          "analyticsName": "PATH|responderFamilySubmenu",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4167,7 +4167,7 @@
           "url": "responderFamily"
         },
         "responderKids": {
-          "analyticsName": "State|Domain|responderKids",
+          "analyticsName": "PATH|responderKids",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4176,7 +4176,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_responderKids.json"
         },
         "responderMemorialWorkouts2": {
-          "analyticsName": "State|Domain|responderMemorialWorkouts2",
+          "analyticsName": "PATH|responderMemorialWorkouts2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4185,7 +4185,7 @@
           "url": "responderMemorialWorkouts2"
         },
         "responderMemorialWorkoutsPDF2": {
-          "analyticsName": "State|Domain|responderMemorialWorkoutsPDF2",
+          "analyticsName": "PATH|responderMemorialWorkoutsPDF2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4194,7 +4194,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_responderMemorialWorkouts.json"
         },
         "responderSpouse": {
-          "analyticsName": "State|Domain|responderSpouse",
+          "analyticsName": "PATH|responderSpouse",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4203,7 +4203,7 @@
           "url": "responderSpouse"
         },
         "responderSpouseOnlineResources": {
-          "analyticsName": "State|Domain|responderSpouseOnlineResources",
+          "analyticsName": "PATH|responderSpouseOnlineResources",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4212,7 +4212,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_responderSpouseOnlineResources.json"
         },
         "retirementCalculatorWeblink": {
-          "analyticsName": "State|Domain|retirementCalculatorWeblink",
+          "analyticsName": "PATH|retirementCalculatorWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4221,7 +4221,7 @@
           "url": "https://retirementcalculator.nga.finra.org/calculator/"
         },
         "retirementPrepSubmenu": {
-          "analyticsName": "State|Domain|retirementPrepSubmenu",
+          "analyticsName": "PATH|retirementPrepSubmenu",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4230,7 +4230,7 @@
           "url": "retirementPrep"
         },
         "sMARTGoalActivity": {
-          "analyticsName": "State|Domain|sMARTGoalActivity",
+          "analyticsName": "PATH|sMARTGoalActivity",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4242,7 +4242,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_sMARTGoalActivity.json"
         },
         "sMARTGoalsArticle": {
-          "analyticsName": "State|Domain|sMARTGoalsArticle",
+          "analyticsName": "PATH|sMARTGoalsArticle",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4251,7 +4251,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_sMARTGoalsArticle.json"
         },
         "sMARTGoalsSubmenu": {
-          "analyticsName": "State|Domain|sMARTGoalsSubmenu",
+          "analyticsName": "PATH|sMARTGoalsSubmenu",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4260,7 +4260,7 @@
           "url": "sMARTGoals"
         },
         "safetyPlanPurposeInstructions": {
-          "analyticsName": "State|Domain|safetyPlanPurposeInstructions",
+          "analyticsName": "PATH|safetyPlanPurposeInstructions",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4269,7 +4269,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_safetyPlanPurposeInstructions.json"
         },
         "selfAwareness2": {
-          "analyticsName": "State|Domain|selfAwareness2",
+          "analyticsName": "PATH|selfAwareness2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4278,7 +4278,7 @@
           "url": "selfAwareness2"
         },
         "selfAwarenessDailyCheckInActivity2": {
-          "analyticsName": "State|Domain|selfAwarenessDailyCheckInActivity2",
+          "analyticsName": "PATH|selfAwarenessDailyCheckInActivity2",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4290,7 +4290,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_selfAwarenessDailyCheckInPurposeInstruction.json"
         },
         "selfAwarenessDailyCheckInPurposeInstruction2": {
-          "analyticsName": "State|Domain|selfAwarenessDailyCheckInPurposeInstruction2",
+          "analyticsName": "PATH|selfAwarenessDailyCheckInPurposeInstruction2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4299,7 +4299,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_selfAwarenessDailyCheckInPurposeInstruction.json"
         },
         "selfAwarenessReflectionFrameworkActivity2": {
-          "analyticsName": "State|Domain|selfAwarenessReflectionFrameworkActivity2",
+          "analyticsName": "PATH|selfAwarenessReflectionFrameworkActivity2",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4311,7 +4311,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_selfAwarenessReflectionFramework.json"
         },
         "selfAwarenessReflectionFrameworkPurposeInstruction2": {
-          "analyticsName": "State|Domain|selfAwarenessReflectionFrameworkPurposeInstruction2",
+          "analyticsName": "PATH|selfAwarenessReflectionFrameworkPurposeInstruction2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4320,7 +4320,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_selfAwarenessPurposeInstruction.json"
         },
         "shiftWorkSleepDisorders": {
-          "analyticsName": "State|Domain|shiftWorkSleepDisorders",
+          "analyticsName": "PATH|shiftWorkSleepDisorders",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4329,7 +4329,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_sleepDisorders.json"
         },
         "shouldITrackMacros": {
-          "analyticsName": "State|Domain|shouldTrackMacros",
+          "analyticsName": "PATH|shouldTrackMacros",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4338,7 +4338,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_shouldITrackMacros.json"
         },
         "sleepHygiene": {
-          "analyticsName": "State|Domain|sleepHygiene",
+          "analyticsName": "PATH|sleepHygiene",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4347,7 +4347,7 @@
           "url": "sleepHygiene"
         },
         "sleepHygieneOnlineResources": {
-          "analyticsName": "State|Domain|sleepHygieneOnlineResources",
+          "analyticsName": "PATH|sleepHygieneOnlineResources",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4356,7 +4356,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_sleepHygieneOnlineResources.json"
         },
         "sleepLog": {
-          "analyticsName": "State|Domain|sleepLog",
+          "analyticsName": "PATH|sleepLog",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4368,7 +4368,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_sleepLog.json"
         },
         "sleepSoundsAudioPlaylist": {
-          "analyticsName": "State|Domain|sleepSoundsAudioPlaylist",
+          "analyticsName": "PATH|sleepSoundsAudioPlaylist",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4377,7 +4377,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/int_sleepSoundsAudioPlaylist.json"
         },
         "sleepSupplements": {
-          "analyticsName": "State|Domain|sleepSupplements",
+          "analyticsName": "PATH|sleepSupplements",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4386,7 +4386,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_sleepSupplements.json"
         },
         "snacksGallery": {
-          "analyticsName": "State|Domain|snacksGallery",
+          "analyticsName": "PATH|snacksGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4395,7 +4395,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_snacks.json"
         },
         "socialSecurityEstimatorWeblink": {
-          "analyticsName": "State|Domain|socialSecurityEstimatorWeblink",
+          "analyticsName": "PATH|socialSecurityEstimatorWeblink",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4404,7 +4404,7 @@
           "url": "https://www.ssa.gov/prepare/plan-retirement"
         },
         "softTissue2": {
-          "analyticsName": "State|Domain|softTissue2",
+          "analyticsName": "PATH|softTissue2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4413,7 +4413,7 @@
           "url": "softTissue2"
         },
         "specializedTreatmentsInMilitary2_noIcon": {
-          "analyticsName": "State|Domain|specializedTreatmentsInMilitary",
+          "analyticsName": "PATH|specializedTreatmentsInMilitary",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4422,7 +4422,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_specializedTreatmentsInMilitary.json"
         },
         "specializedTreatmentsInMilitaryContacts2": {
-          "analyticsName": "State|Domain|specializedTreatmentsInMilitary",
+          "analyticsName": "PATH|specializedTreatmentsInMilitary",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4431,7 +4431,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_specializedTreatmentsInMilitary.json"
         },
         "spiritualWellnessResources": {
-          "analyticsName": "State|Domain|spiritualWellnessResources",
+          "analyticsName": "PATH|spiritualWellnessResources",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4440,7 +4440,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_spiritualWellnessResources.json"
         },
         "storiesOfHopeRecovery2": {
-          "analyticsName": "State|Domain|storiesOfHopeRecovery2",
+          "analyticsName": "PATH|storiesOfHopeRecovery2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4449,7 +4449,7 @@
           "url": "PLuQ0LbwSEVjL_HQ9LATsRZnWL2HpUbPXh"
         },
         "strength2": {
-          "analyticsName": "State|Domain|strength2",
+          "analyticsName": "PATH|strength2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4458,7 +4458,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_strengthWorkouts.json"
         },
         "stressManagement2": {
-          "analyticsName": "State|Domain|stressManagement2",
+          "analyticsName": "PATH|stressManagement2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4467,7 +4467,7 @@
           "url": "stressManagement2"
         },
         "stressManagementTransformStressToResilence": {
-          "analyticsName": "State|Domain|stressManagementTransformStressToResilence",
+          "analyticsName": "PATH|stressManagementTransformStressToResilence",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4479,7 +4479,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_stressManagementTransformStressToResilence.json"
         },
         "stressManagementTransformStressToResliencePurposeInstruction": {
-          "analyticsName": "State|Domain|stressManagementTransformStressToResliencePurposeInstruction",
+          "analyticsName": "PATH|stressManagementTransformStressToResliencePurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4488,7 +4488,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_stressManagementTransformStressToResliencePurposeInstruction.json"
         },
         "stressManagementYourStressIndicatorPurposeInstruction": {
-          "analyticsName": "State|Domain|stressManagementYourStressIndicatorPurposeInstruction",
+          "analyticsName": "PATH|stressManagementYourStressIndicatorPurposeInstruction",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4497,7 +4497,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_stressManagementYourStressIndicatorPurposeInstruction.json"
         },
         "stressManagementYourStressIndicators": {
-          "analyticsName": "State|Domain|stressManagementYourStressIndicators",
+          "analyticsName": "PATH|stressManagementYourStressIndicators",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4509,7 +4509,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_stressManagementYourStressIndicators.json"
         },
         "submitAMemorialWorkout2": {
-          "analyticsName": "State|Domain|submitAMemorialWorkout2",
+          "analyticsName": "PATH|submitAMemorialWorkout2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4518,7 +4518,7 @@
           "url": "https://www.thesheriffapp.com/"
         },
         "subwayGallery": {
-          "analyticsName": "State|Domain|subwayGallery",
+          "analyticsName": "PATH|subwayGallery",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4527,7 +4527,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_subway.json"
         },
         "successAndFailureJournal": {
-          "analyticsName": "State|Domain|successAndFailureJournal",
+          "analyticsName": "PATH|successAndFailureJournal",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "imageURL": "",
@@ -4539,7 +4539,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_successAndFailureJournal.json"
         },
         "suicideAwareness2": {
-          "analyticsName": "State|Domain|suicideAwareness2",
+          "analyticsName": "PATH|suicideAwareness2",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4548,7 +4548,7 @@
           "url": "suicide"
         },
         "suicideInformationAndSupport": {
-          "analyticsName": "State|Domain|suicideInformationAndSupport",
+          "analyticsName": "PATH|suicideInformationAndSupport",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4557,7 +4557,7 @@
           "url": "https://screening.mhanational.org/suicide/"
         },
         "suicideSafetyPlan": {
-          "analyticsName": "State|Domain|suicideSafetyPlan",
+          "analyticsName": "PATH|suicideSafetyPlan",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4566,7 +4566,7 @@
           "url": "suicideSafetyPlan"
         },
         "suicideSafetyPlanActivity": {
-          "analyticsName": "State|Domain|suicideSafetyPlanActivity",
+          "analyticsName": "PATH|suicideSafetyPlanActivity",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4578,7 +4578,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_suicideSafetyPlanActivity.json"
         },
         "suicideSupportNumbers": {
-          "analyticsName": "State|Domain|suicideSupportNumbers",
+          "analyticsName": "PATH|suicideSupportNumbers",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4587,7 +4587,7 @@
           "url": "https://cdn.myocv.com/ocvapps/a19336830/public/contact_emergencyHelpline.json"
         },
         "supplemenationForBrainHealth": {
-          "analyticsName": "State|Domain|supplementationForBrainHealth",
+          "analyticsName": "PATH|supplementationForBrainHealth",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4596,7 +4596,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_supplementationForBrainHealth.json"
         },
         "supplementCertificationSearch": {
-          "analyticsName": "State|Domain|supplementCertificationSearch",
+          "analyticsName": "PATH|supplementCertificationSearch",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4605,7 +4605,7 @@
           "url": "https://info.nsf.org/Certified/dietary/"
         },
         "supplementationConsiderations": {
-          "analyticsName": "State|Domain|supplementationConsiderations",
+          "analyticsName": "PATH|supplementationConsiderations",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4614,7 +4614,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_supplementationConsiderations.json"
         },
         "supplementationForInjuryPrevention": {
-          "analyticsName": "State|Domain|supplementationForInjuryPrevention",
+          "analyticsName": "PATH|supplementationForInjuryPrevention",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4623,7 +4623,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_supplementationForInjuryPrevention.json"
         },
         "supplements": {
-          "analyticsName": "State|Domain|supplements",
+          "analyticsName": "PATH|supplements",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4632,7 +4632,7 @@
           "url": "supplements"
         },
         "tactical2": {
-          "analyticsName": "State|Domain|tactical2",
+          "analyticsName": "PATH|tactical2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4641,7 +4641,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_tacticalWorkotus.json"
         },
         "teambuilding": {
-          "analyticsName": "State|Domain|teamBuilding2",
+          "analyticsName": "PATH|teamBuilding2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4650,7 +4650,7 @@
           "url": "teambuilding"
         },
         "teambuildingArticles": {
-          "analyticsName": "State|Domain|teamBuildingArticles",
+          "analyticsName": "PATH|teamBuildingArticles",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4659,7 +4659,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_teamBuilding.json"
         },
         "trackingMacros": {
-          "analyticsName": "State|Domain|trackingMacros",
+          "analyticsName": "PATH|trackingMacros",
           "appID": "changeMe",
           "image": "",
           "submenuID": "trackingMacros",
@@ -4669,7 +4669,7 @@
           "url": ""
         },
         "traumaPTSDAnxiety": {
-          "analyticsName": "State|Domain|traumaPTSDAnxiety",
+          "analyticsName": "PATH|traumaPTSDAnxiety",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4678,7 +4678,7 @@
           "url": "traumaPTSDAnxiety"
         },
         "treatmentsAssessments": {
-          "analyticsName": "State|Domain|treatmentsAssessments",
+          "analyticsName": "PATH|treatmentsAssessments",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4687,7 +4687,7 @@
           "url": "treatmentsAssessments"
         },
         "upperLegHip": {
-          "analyticsName": "State|Domain|upperLegHip",
+          "analyticsName": "PATH|upperLegHip",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4696,7 +4696,7 @@
           "url": "PLuQ0LbwSEVjLgSY3MD8zRGl8kQa6UCyqL&si=i1ysVPxf0W4gA6ka"
         },
         "valuesInNutritionArticle": {
-          "analyticsName": "State|Domain|valuesInNutritionArticle",
+          "analyticsName": "PATH|valuesInNutritionArticle",
           "appID": "changeMe",
           "imageURL": "",
           "subtypes": [],
@@ -4705,7 +4705,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_valuesInNutritionArticle.json"
         },
         "warmUp2": {
-          "analyticsName": "State|Domain|warmUp2",
+          "analyticsName": "PATH|warmUp2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4714,7 +4714,7 @@
           "url": "warmUp2"
         },
         "warmUpRoutine1": {
-          "analyticsName": "State|Domain|warmUp2",
+          "analyticsName": "PATH|warmUp2",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4723,7 +4723,7 @@
           "url": "warmUpRoutine1"
         },
         "warmUpRoutine2": {
-          "analyticsName": "State|Domain|warmUp2",
+          "analyticsName": "PATH|warmUp2",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4735,7 +4735,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_warmUp.json"
         },
         "warningSignsOnlineResources": {
-          "analyticsName": "State|Domain|warningSignsOnlineResources",
+          "analyticsName": "PATH|warningSignsOnlineResources",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4744,7 +4744,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_warningSignsOnlineResources.json"
         },
         "weightLog": {
-          "analyticsName": "State|Domain|weightLog",
+          "analyticsName": "PATH|weightLog",
           "appID": "changeMe",
           "formSubmitButtonText": "Save",
           "image": "",
@@ -4756,7 +4756,7 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_weightLog.json"
         },
         "wellnessSubmenu2": {
-          "analyticsName": "State|Domain|wellnessSubmenu2",
+          "analyticsName": "PATH|wellnessSubmenu2",
           "appID": "changeMe",
           "image": "home",
           "subtypes": [],
@@ -4765,7 +4765,7 @@
           "url": "wellnessSubmenu2"
         },
         "workLifeBalance": {
-          "analyticsName": "State|Domain|workLifeBalance",
+          "analyticsName": "PATH|workLifeBalance",
           "appID": "changeMe",
           "image": "",
           "subtypes": [],
@@ -4841,7 +4841,6 @@
       },
       "title": "",
       "vertical": "theSheriffApp",
-      "xAPIKey": "jCBDA3ezQI9v3KU3K73GR3gEBzQLjeOh1gBZBcha"
-    
+      "xAPIKey": "jCBDA3ezQI9v3KU3K73GR3gEBzQLjeOh1gBZBcha"   
 }
   
