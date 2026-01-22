@@ -168,5 +168,13 @@
   "venturaSheriffCA_93009": "COMPASS|venturaSheriffCA",
   "yourSheriff04March_76789638": "AL|yourSheriff04Marcch",
   "mesquitePoliceNV_82824101": "NV|mesquitePoliceNV",
-  "waterlooMoradaFireCA_34812696": "CA|waterlooMoradaFireCA"
+  "waterlooMoradaFireCA_34812696": "CA|waterlooMoradaFireCA",
+  "clinton": "NY|NYSDOCCS",
+  "elmira": "NY|NYSDOCCS",
+  "greatMeadow": "NY|NYSDOCCS",
+  "greenHaven": "NY|NYSDOCCS",
+  "newYorkCity": "NY|NYSDOCCS",
+  "oneidaWatertown": "NY|NYSDOCCS",
+  "sullivan": "NY|NYSDOCCS",
+  "wende": "NY|NYSDOCCS"
 }
