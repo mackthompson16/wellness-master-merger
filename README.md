@@ -13,7 +13,7 @@ It operates purely on JSON manifests and does **not** require platform, runtime,
 
 ---
 
-## How to Use (script-driven)
+## How to Use 
 
 - Split (produce overlays + analytics lookup):  
   `python manifest_tool.py --select aio --action split --input OCVWellness_a71936801.json --master master_manifest.json --log`  
@@ -64,14 +64,12 @@ CLI Interface
 
 The script prompts:
 
-AIO? y/n (if y skip next 2)
-Standalone? y/n (if y skip next)
-External? y/n (if y, print not implemented exception)
-merge or split? m/s
+- AIO? y/n (if y skip next 2)
+- Standalone? y/n (if y skip next)
+- External? y/n (if y, print not implemented exception)
+- merge or split? m/s
 
-retrieve the AppID by inputfile.split("_")[1]; the item after the underscore
-
-App Selection Rules
+# App Selection Rules
 
 AIO
 Process every child under input.manifest.
