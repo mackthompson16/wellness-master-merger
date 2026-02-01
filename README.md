@@ -1,153 +1,144 @@
-# Wellness Master Manifest Tool — Implementation Summary
+# SCRIPT MERGE AND SPLIT TOOL
 
----
+This script manages the manifests of input jsons, optionally using a master to track changes.
 
-## Purpose
+In add mode:
+-  iterate through all of the working headers and add the corresponding features that exist in the input
 
-This tool manages Wellness app manifests by separating:
+In change mode:
+- Override the feature level nodes (featureHub/feature) of each of the header trees.
 
-- **Shared master content** (single source of truth)
-- **App-specific overlays** (only meaningful differences)
+In audit mode produce sections in the output:
+-  diff_master: the items in master that are not in the working header tree
+-  diff_app: the items in the working header tree that are not in master
 
-It operates purely on JSON manifests and does **not** require platform, runtime, or app code changes.
+In merge mode produce merged_manifest:
+  the combination of the master and each header tree,
+  achieved by overlaying the diff_app content onto master.
 
----
+## Config:
+- Ignore these fields:
+    IGNORED_KEYS = {"url", "imageURL", "analyticsName", "appID", "backgroundImageURL"}
+- Ignore these headers:
+    IGNORED_PREFIXES = {"30", "demo", "TEST", "OLD", "_", "tier"}
 
-## How to Use 
+# Implement these functions
 
-- Split (produce overlays + analytics lookup):  
-  `python manifest_tool.py --select aio --action split --input OCVWellness_a71936801.json --master master_manifest.json --log`  
-  Uses master as the baseline; outputs only data unique to the input manifests.
+### build_diff(input_manifest, master, input_headers):
+    input_manifest = working JSON
+    master = find diff from this file
+    input_headers = working headers
 
-- Merge (pull in latest master, apply overlays, rewrite appIDs/analytics/URLs):  
-  `python manifest_tool.py --select aio --action merge --input OCVWellness_a71936801.json --master master_manifest.json --app-id <APPID> --log`  
-  The `--app-id` value is injected for all appID fields and URL rewrites; analyticsName fields are rebuilt from the prefix lookup.
+    for every header:
 
-Interactive mode (no flags) will prompt for AIO/Standalone/External, merge/split, appID, and optional logging. Defaults: input `OCVWellness_a71936801.json`, master `master_manifest.json`.
+        if mode is audit, produce two diffs: one from master->app and app->master
+        thus, follow the schematic:
+        {
+            "diff_app" : { header_0:{},....header_n:{}},
+            "diff_master" : { header_0:{},....header_n:{}},
+        }
+        if mode is merge, just produce app -> master
+        {
+            header_0:{},....header_n:{},
+        }
 
----
+        we have two roots to traverse: master and header.
+        linearly traverse the entire tree (skipping IGNORED_KEYS).
 
-## Files
 
-### Input Files
+        At each Node:
+            If the node is a list, treat as a set; order does not matter.
+            If both the master and header have the node, continue
+            If mode is audit:
+                If master contains a node that is not in the header tree:
+                    add 1 to diff_count_master
+                    add the path and data to "diff_master"{"header":{}}
+            If the header tree contains a node that is not in master:
+                add 1 to diff_count_app
+                add the path to the correct path of our output data
 
-- `master_manifest.json`  
-  Canonical shared Wellness manifest.
+        Extract_Prefix(header, input_manifest)
 
-- `AIO.json` (or similar)  
-  Contains:
-  ```json
-  {
-    "manifest": {
-      "<appHeader>": { ... },
-      ...
+    return diff_overlay, diff_count_master, diff_app, diff_count_app, prefixes
+
+### Extract_Prefix(header, input_manifest):
+- this is used to find the correct analytics name to track.
+- take the first value located at: header.features.(feature).analyticsName
+    that is not "openSettings" (it will be the second value)
+    if we find: "analyticsName": "IN|lawrenceCountyIN|resilienceReps"
+    store it as:
+    prefixes[header] = "IN|lawrenceCountyIN"
+    we can assume they will all follow that format of 3 parts with "|".
+    return prefixes
+
+### add_to_file(master, input_manifest):
+    for every header in input manifest:
+        If add: 
+            traverse the input headers, down the path that the master follows.
+            find the first node in master that doesnt exist in this header, and add the corresponding contents here. 
+        If override:
+            traverse the input headers, down to the feature level contents. replace the contents with whatever master has (if it doesn't exist, add it). 
+            e.g. replace working_header.features.(feature)  withmaster.features.(feature name)
+    return modified JSON
+
+
+### merge_outputs(master, overlays, input_headers, prefixes, app_id)
+    master = base file
+    overlays = content we need to append
+    app_id = used for changing some data
+    input_headers = working header
+
+    start output:
+    {
+    "manifest": 
+        {
+        }
     }
-  }
-
-Output Files
-
-split_overlays.json
-Per-app overlays containing only differences from master.
-
-analytics_prefix_lookup.json
-Mapping:
-
-{
-  "<appHeader>": "<prefixA>|<prefixB>"
-}
 
 
-merged_output.json
-Fully compiled manifests (master + overlay), ready for rebuild.
+    for every header in input_headers:
+        add manifest.header to the output.
+        add master to manifest.header
 
-CLI Interface
+        now we have to do the merge part.
+        traverse linearly through overlays, follow along with the manifest.header
+        when we reach the depth where this node does not exist in the master, append it.
+        Continue until all of the content on the overlay is added into the correct path in the output
 
-The script prompts:
-
-- AIO? y/n (if y skip next 2)
-- Standalone? y/n (if y skip next)
-- External? y/n (if y, print not implemented exception)
-- merge or split? m/s
-
-# App Selection Rules
-
-AIO
-Process every child under input.manifest.
-
-Standalone
-Process only the first item under input.manifest.
-
-External
-Exit (reserved for future handling).
-
-### Analytics Prefix Lookup
-For each app:
-
-get the features.resilienceReps.analyticsName
-
-Extract prefix: A|B|C → A|B
-Store:
-
-{
-  "<appHeader>": "A|B"
-}
-
-## Comparison Semantics
-Key Principles
-
-To find diff, start at the root nodes of the app. For each node, if it exists in master open it up.
-If it doesn't exist, add the node and all of the elements to the output.
-
-For each child Node, if there is a value that does not exist in master, add the full tree into output.
-
-continue this process until we reach the leaf.
-
-For example, you will be iterating through features: if features.oCVWellnessResources is not in master, add it to the output. 
+        This last part is like a ctrl-f replace: 
+            find-and-replace-all("ChangeMe", appID)
+            find-and-replace-all("PATH", prefixes[Header])
+    
+    return output_json
 
 
-When traversing, you can skip the ignore fields:
+### write_console_log()
 
-url, imageURL, analyticsName, appID
-
-split_overlays.json contains:
-
-{
-  "manifest": {
-    "<appHeader>": {
-      "<section>": { ...all diffs, stored with the same path as originally found... }
-    }
-  }
-}
+    show the number of diffs found for each header, just print in console
 
 
-analytics_prefix_lookup.json updated automatically.
+## Follow this execution (already valid superblocks):
 
-## Merge Logic (Compilation)
-Objective
+app_id = Input220.value
+mode = Dropdown130.selectedOptionValue
+print("Mode: ", mode)
+input_manifest_raw = parse_json_maybe_double_encoded(
+    FilePicker1.files[0]["readContents"]()
+)
 
-Generate full app manifests by combining:
+master_raw = parse_json_maybe_double_encoded(FilePicker2.files[0]["readContents"]())
+input_manifest = unwrap_manifest(input_manifest_raw)
+master = unwrap_manifest(master_raw)
 
-compiled = master + overlay
+input_headers = select_app_headers(input_manifest)
 
-Assume the overlay does not contain anything that is already in master. 
+diff_overlay, diff_count_master, diff_count_app, prefixes = build_diff(
+    input_manifest, master, input_headers, mode
+)
 
-For every item in the overlay, check if master has the node.
+write_console_log(input_headers, diff_count_app, diff_count_master)
 
-If it does, to find the first node that does not exist in master (may be a leaf). Add the data here/
-
-When complete, 
-
-
-Replace every occurence of "changeMe" with the appID found in the begging.
-(can be as simple as ctrl+f replace)
-
-Replace every "analyticsName" field the lookup by using the header.
-
-Single output file:
-
-{
-  "manifest": {
-    "<appHeader>": { ...compiled manifest... }
-  }
-}
-
+if mode == "Audit":
+    return diff_overlay
+else:
+    return merge_outputs(master, diff_overlay, input_headers, prefixes, app_id)

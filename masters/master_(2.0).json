@@ -1,17 +1,4 @@
 {
-      "defaultCity": "DefaultCity",
-      "defaultLat": "40.0000",
-      "defaultLong": "-70.0000",
-      "launchPopups": [
-        {
-          "items": [
-            "openSettings"
-          ],
-          "popupDesc": "Our app supports your phone's font size settings, includes a new search index in the corner, works in landscape orientation, features updated colors for better visibility and color contrast, updated button sizing, and more.\nNOTE: Based upon your device font size that is set you may see a different layout to provide the best experience to navigate the app.\nIf you want to control your layout or make a change to your font sizing on the OS level, please view instructions in the settings.",
-          "popupShowOnce": true,
-          "popupTitle": "New App Accessibility Support"
-        }
-      ],
       "featureHubs": {
         "resilienceReps": {
           "backgroundHex": "greyBackground",
@@ -1039,10 +1026,7 @@
                 "minimumHeight": 150,
                 "textHex": "white",
                 "cards": [
-                   {
-                    "featureID": "departmentChaplains",
-                    "backgroundImageURL": "https://cdn.myocv.com/ocvapps/changeMe/files/department%20chaplain-23dec.png"
-                  },   
+                   
                   {
                     "featureID": "spiritualWellnessResources",
                     "backgroundImageURL": "https://cdn.myocv.com/ocvApps/changeMe/files/spiritual%20wellness%20resources-23dec.png"
@@ -2663,126 +2647,8 @@
               "type": "headerText"
             }
           ]
-        },
-        "wellnessSubmenu2": {
-          "backgroundHex": "greyBackground",
-          "components": [
-            {
-              "payload": {
-                "imageURL": "https://cdn.myocv.com/ocvapps/a94336801/files/OCV%20Favicon%20Large.png",
-                "title": "OCV Wellness",
-                "backgroundHex": "primary"
-              },
-              "type": "navbar"
-            },
-            {
-              "payload": {
-                "subtitle": "Responder Wellness",
-                "textAlignment": "center",
-                "title": "OCV Wellness",
-                "style": "solid",
-                "backgroundHex": "primary"
-              },
-              "type": "header"
-            },
-            {
-              "payload": {
-                "activeHex": "white",
-                "inactiveHex": "white",
-                "style": "solid"
-              },
-              "type": "notificationBar"
-            },
-            {
-              "payload": {
-                "style": "solid",
-                "buttonHex": "white",
-                "textHex": "black"
-              },
-              "type": "favorites"
-            },
-            {
-              "payload": {
-                "buttonHex": "green",
-                "style": "solid",
-                "buttons": [
-                  {
-                    "featureID": "getHelpNow2"
-                  }
-                ]
-              },
-              "type": "hotButtons"
-            },
-
-        
-              
-            {
-              "payload": {
-                "ratio": 0.375,
-                "views": [
-                  {
-                    "type": "image",
-                    "url": "https://cdn.myocv.com/ocvApps/changeMe/files/wellnessSubmenu2_mind-min.png",
-                    "featureID": "mindSubmenu2"
-                  }
-                ]
-              },
-              "type": "mediaWidget"
-            },
-            {
-              "payload": {
-                "ratio": 0.375,
-                "views": [
-                  {
-                    "type": "image",
-                    "url": "https://cdn.myocv.com/ocvApps/changeMe/files/wellnessSubmenu2_fit-min.png",
-                    "featureID": "fitSubmenu2"
-                  }
-                ]
-              },
-              "type": "mediaWidget"
-            },
-            {
-              "payload": {
-                "ratio": 0.375,
-                "views": [
-                  {
-                    "type": "image",
-                    "url": "https://cdn.myocv.com/ocvApps/changeMe/files/wellnessSubmenu2_fuel-min.png",
-                    "featureID": "fuelSubmenu2"
-                  }
-                ]
-              },
-              "type": "mediaWidget"
-            },
-            {
-              "payload": {
-                "ratio": 0.375,
-                "views": [
-                  {
-                    "type": "image",
-                    "url": "https://cdn.myocv.com/ocvApps/changeMe/files/wellnessSubmenu2_life-min.png",
-                    "featureID": "lifeSubmenu2"
-                  }
-                ]
-              },
-              "type": "mediaWidget"
-            },
-            {
-              "payload": {
-                "ratio": 0.375,
-                "views": [
-                  {
-                    "type": "image",
-                    "url": "https://cdn.myocv.com/ocvApps/changeMe/files/wellnessSubmenu2_lead-min.png",
-                    "featureID": "leadSubmenu2"
-                  }
-                ]
-              },
-              "type": "mediaWidget"
-            }
-          ]
         }
+
       },
       "features": {
         "openSettings": {
@@ -2972,24 +2838,7 @@
           "type": "73",
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/fileGallery_cardioWorkouts.json"
         },
-        "departmentChaplains": {
-          "analyticsName": "PATH|departmentChaplains",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Chaplain Support",
-          "type": "1",
-          "url": "https://cdn.myocv.com/ocvapps/changeMe/public/contact_senecaNYChaplainSupport.json"
-        },
-        "chipotleGallery": {
-          "analyticsName": "PATH|chipotleGallery",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Chipotle",
-          "type": "26",
-          "url": "https://cdn.myocv.com/ocvApps/changeMe/public/gallery_chipotle.json"
-        },
+       
         "coWorkerSupport": {
           "analyticsName": "PATH|chipotleGallery",
           "appID": "changeMe",
@@ -4755,15 +4604,7 @@
           "type": "5",
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/form_weightLog.json"
         },
-        "wellnessSubmenu2": {
-          "analyticsName": "PATH|wellnessSubmenu2",
-          "appID": "changeMe",
-          "image": "home",
-          "subtypes": [],
-          "title": "OCV Wellness",
-          "type": "100",
-          "url": "wellnessSubmenu2"
-        },
+      
         "workLifeBalance": {
           "analyticsName": "PATH|workLifeBalance",
           "appID": "changeMe",
@@ -4774,10 +4615,6 @@
           "url": "https://cdn.myocv.com/ocvApps/changeMe/public/contact_lifeSocial.json"
         }
       },
-      "iOSStatusBarBackgroundHex": "#105C9C",
-      "mainFeatureHub": "wellnessSubmenu2",
-      "navBarColor": "#105C9C",
-      "navBarTextColor": "#ffffff",
       "popups": {
         "emergencyDispatchPopup": {
           "popupDesc": "This number is used for local emergencies within this county.",
@@ -4786,22 +4623,9 @@
           "popupType": "normal",
           "version": "1.0"
         }
-      },
-      "primaryHex": "#105C9C",
-      "pushConfig": {
-        "registerChannels": [
-          ""
-        ],
-        "showPushWizard": false
-      },
-      "secondaryHex": "#666666",
+      },   
       "stylesheet": {
         "colors": [
-          {
-            "hex": "#105C9C",
-            "hexDark": "#105C9C",
-            "id": "primary"
-          },
           {
             "hex": "#666666",
             "hexDark": "#666666",
@@ -4838,9 +4662,6 @@
             "id": "errorBackground"
           }
         ]
-      },
-      "title": "",
-      "vertical": "theSheriffApp",
-      "xAPIKey": "jCBDA3ezQI9v3KU3K73GR3gEBzQLjeOh1gBZBcha"   
+      }
 }
   

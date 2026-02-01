@@ -1,5 +1,0 @@
-Overlays: 1
-Total diffs (nodes): 376
-
-Apps with overlays (differences found):
-- clinton (nodes: 376)

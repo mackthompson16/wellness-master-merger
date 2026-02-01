@@ -1,0 +1,2380 @@
+{
+      "featureHubs": {
+        "commandStaffToolkit": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "comprehensiveSuicidePreventionCommunication"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "managingMedia"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "contemporaryissuesInPolicePsychology"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "criticalIncidentManagementAndReturnToDutyProtocol"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "gradedReEntryToFullDutyExample"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "makeItSafePoliceOfficerInitiative"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "lawEnforcementPeerSupportTeamManual"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "firefighterPeerSupportTeamManual"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "civilianPeerSupportTeamManual"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "developingAComrehensiveLEOSuicidePreventionProgram"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "lawEnforcementCriticalIncidentInformationBooklet"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "COMPASS"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "exercise": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Read & Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "mentalHealthStartsWithPhysicalHealth"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "workoutPrograms"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "fitnessScreeningDoctorVisit"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "prehabInjuryPrevention"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthyLivingAndExerciseAudio"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "familyPeerSupportResources": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "helpline"
+                  }
+                ],
+                "style": "solid",
+                "buttonHex": "green"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "testimonials"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "compassionFatigueResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "firstResponderChildrensFoundation"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "financialManagement": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "financialWellBeingQuiz"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "financialPlanningInformation"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "iACPFinanicalLiteracy"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "educationalResources"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "home": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+           
+           
+            {
+              "payload": {
+                "buttonHex": "green",
+                "buttons": [
+                  {
+                    "featureID": "helpline"
+                  }
+                ],
+                "style": "solid",
+                "textHex": "darkText"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttonHex": "white",
+                "buttons": [
+                  {
+                    "featureID": "localResourcesMenu"
+                  },
+                  {
+                    "featureID": "peerSupportTeam"
+                  },
+                  {
+                    "featureID": "healthyLivingExercise"
+                  }
+                ],
+                "layoutType": "icon",
+                "style": "solid",
+                "textHex": "primary"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttonHex": "white",
+                "buttons": [
+                  {
+                    "featureID": "healthyLivingSleep"
+                  },
+                  {
+                    "featureID": "healthyLivingNutrition"
+                  },
+                  {
+                    "featureID": "suicideInterventionAndPrevention"
+                  }
+                ],
+                "layoutType": "icon",
+                "style": "solid",
+                "textHex": "primary"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttonHex": "white",
+                "buttons": [
+                  {
+                    "featureID": "stressManagement"
+                  },
+                  {
+                    "featureID": "familySupportResources"
+                  },
+                  {
+                    "featureID": "financialManagementResources"
+                  }
+                ],
+                "layoutType": "icon",
+                "style": "solid",
+                "textHex": "primary"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttonHex": "white",
+                "buttons": [
+                  {
+                    "featureID": "otherWellnessResources"
+                  },
+                  {
+                    "featureID": "selfAssessments"
+                  },
+                  {
+                    "featureID": "media"
+                  }
+                ],
+                "layoutType": "icon",
+                "style": "solid",
+                "textHex": "primary"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttonHex": "white",
+                "buttons": [
+                  {
+                    "featureID": "myPlan"
+                  },
+                  {
+                    "featureID": "wellnessNews"
+                  },
+                  {
+                    "featureID": "contentAttribution"
+                  }
+                ],
+                "layoutType": "icon",
+                "style": "solid",
+                "textHex": "primary"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "activeHex": "primary",
+                "inactiveHex": "primary",
+                "style": "solid"
+              },
+              "type": "legacyTicker"
+            }
+          ]
+        },
+        "localResourcesMenu": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "localResources"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "localResourcesMap"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "localResourcesEvents"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "media": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "breathingExerciseVideoPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "compassionFatigueResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "ptsdResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "stressResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "suicideResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "commencementAddressVideo"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthLivingSleepAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "stressManagementAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "otherWellnessResourcesAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthyLivingAndNutritionAudio"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthyLivingAndExerciseAudio"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "suicideInterventionAndPreventionAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "myPlan": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "checklist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "emergencyInfo"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "crisisPlanForYourSupportSystem"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "psychologicalFirstAidKit"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "thinkAhead"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "nutrition": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Read & Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthyEating"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "nutritionalNeedsFlyer"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "hydrationReminder"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthyLivingAndNutritionAudio"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "officerToolkit": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "emotionalSuppressionLeadsToDepression"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "becomingAResilientFirstResponder"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "suicideIsNotPainless"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "whatHappensAfterRetirement"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "emotionalSurvivalForLawEnforcement"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "otherWellnessResources": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Read & Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "commandStaffToolkit"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "officerToolkit"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "diyToolsResources"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "overcomingThoughts"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "mentalHealthMonthToolkit"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "emergencyResponderExhaustionSyndrome"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "ptsdResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "compassionFatigueResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "alcoholAndSubstanceAbuseAmongFirstResponders"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "anger"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "whatIsDepression"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "crisisPlanForYourSupportSystem"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "recoveryAfterTheTraumaPostTraumaticGrowth"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "otherWellnessResourcesAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "selfAssessments": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "selfAssessmentsFAQ"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "depressionScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "postpartumDepressionScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "anxietyScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "bipoloarScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "ptsdScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "eatingDisorderScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "psychosisScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "addictionScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "youthScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "parentScreen"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "addictionScreenSpanish"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "anxietyScreenSpanish"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleep": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Read & Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "resourcesOnSleep"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "shiftSchedulesSleepDisorders"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepDeprivation"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "effectsOfSleepDeprivation"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "healthLivingSleepAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "stress": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Read & Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "theStressResponse"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "managingStress"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "stressResourceVideos"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "howToMeditate"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "stressManagementAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "suicide": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "text": "Read & Watch"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "suicideSupportNumbers"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "storiesOfHopeAndRecovery"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "suicideInformationAndSupport"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "warningSidesOfSuicide"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "developingAComrehensiveLEOSuicidePreventionProgram"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "text": "Listen"
+              },
+              "type": "bodyText"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "suicideInterventionAndPreventionAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "warningSidesOfSuicide": {
+          "backgroundHex": "backgroundGray",
+          "components": [
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "warningSidesOfSuicideYoutubePlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "warningSidesOfSuicideArticleOne"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "warningSidesOfSuicideArticleTwo"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        }
+      },
+      "features": {
+        "openSettings": {
+          "analyticsName": "openSettings",
+          "image": "",
+          "imageURL": "",
+          "subtypes": [],
+          "title": "Open Settings",
+          "type": "16",
+          "url": ""
+        },
+        "COMPASS": {
+          "analyticsName": "COMPASS|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Comprehensive Model for Police Advanced Strategic Support (COMPASS)",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_cOMPASS.json"
+        },
+        "addictionScreen": {
+          "analyticsName": "addictionScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Addiction Screen",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/addiction/?ref=OCV"
+        },
+        "addictionScreenSpanish": {
+          "analyticsName": "addictionScreenSpanish|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Depression Screen (Spanish)",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/test-de-depresion/?ref=OCV"
+        },
+        "alcoholAndSubstanceAbuseAmongFirstResponders": {
+          "analyticsName": "alcoholAndSubstanceAbuseAmongFirstResponders|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Alcohol and Substance Abuse Among First Responders",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_alcoholAndSubstanceAbuseAmongFirstResponders.json"
+        },
+        "anger": {
+          "analyticsName": "anger|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Anger",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_anger.json"
+        },
+        "anxietyScreen": {
+          "analyticsName": "anxietyScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Anxiety Screen",
+          "type": "6",
+          "url": "http://screening.mentalhealthamerica.net/screening-tools/anxiety?ref=OCV"
+        },
+        "anxietyScreenSpanish": {
+          "analyticsName": "anxietyScreenSpanish|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Anxiety Screen (Spanish)",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/test-de-ansiedad/?ref=OCV"
+        },
+        "becomingAResilientFirstResponder": {
+          "analyticsName": "becomingAResilientFirstResponder|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Becoming A Resilient First Responder",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_becomingAResilientFirstResponder.json"
+        },
+        "bipoloarScreen": {
+          "analyticsName": "bipoloarScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Bipolar Screen",
+          "type": "6",
+          "url": "https://screening.mentalhealthamerica.net/screening-tools/bipolar/?ref=OCV"
+        },
+        "breathingExerciseVideoPlaylist": {
+          "analyticsName": "breathingExerciseVideoPlaylist|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Breathing Exercise Videos",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjKVePFVvDmJtEZhFsHSNxam"
+        },
+        "checklist": {
+          "analyticsName": "checklist|PATH",
+          "image": "",
+          "subtypes": [
+            "add"
+          ],
+          "title": "Duty Checklist",
+          "type": "58",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_sbsoChecklist.json"
+        },
+        "civilianPeerSupportTeamManual": {
+          "analyticsName": "civilianPeerSupportTeamManual|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Civilian Peer Support Team Manual",
+          "type": "33",
+          "url": "http://jackdigliani.com/uploads/3/4/5/1/34518973/pst_manual_civilian_3.0_nov_2019.pdf"
+        },
+        "commandStaffToolkit": {
+          "analyticsName": "commandStaffToolkit|PATH",
+          "image": "",
+          "imageURL": "",
+          "subtypes": [],
+          "title": "Command Staff Toolkit",
+          "type": "100",
+          "url": "commandStaffToolkit"
+        },
+        "commencementAddressVideo": {
+          "analyticsName": "commencementAddressVideo|PATH",
+          "image": "",
+          "subtypes": [
+            "external"
+          ],
+          "title": "University of Texas at Austin 2014 Commencement Address - Admiral William H. McRaven",
+          "type": "6",
+          "url": "https://www.youtube.com/watch?v=pxBQLFLei70"
+        },
+        "compassionFatigueResourceVideos": {
+          "analyticsName": "compassionFatigueResourceVideos|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Compassion Fatigue Resource Videos",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjLrLvLu_jvu0pPt9KTD0ZQ9"
+        },
+        "comprehensiveSuicidePreventionCommunication": {
+          "analyticsName": "comprehensiveSuicidePreventionCommunication|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Comprehensive Suicide Prevention Communication",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_comprehensiveSuicidePreventionCommunication.json"
+        },
+        "contemporaryissuesInPolicePsychology": {
+          "analyticsName": "contemporaryissuesInPolicePsychology|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Contemporary Issues in Police Psychology",
+          "type": "33",
+          "url": "http://jackdigliani.com/uploads/3/4/5/1/34518973/ppstt.pdf"
+        },
+        "contentAttribution": {
+          "analyticsName": "contentAttribution|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "info_filled",
+          "subtypes": [],
+          "title": "Content Attribution",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/contact_contentAttribution.json"
+        },
+        "crisisPlanForYourSupportSystem": {
+          "_url": "crisisPlanForYourSupportSystem",
+          "analyticsName": "crisisPlanForYourSupportSystem|PATH",
+          "changeMe": "a19336830",
+          "image": "",
+          "subtypes": [
+            "localExport"
+          ],
+          "title": "Crisis Plan for your Support System",
+          "type": "5",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/form_crisisPlanForYourSupportSystem.json"
+        },
+        "criticalIncidentManagementAndReturnToDutyProtocol": {
+          "analyticsName": "criticalIncidentManagementAndReturnToDutyProtocol|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Critical Incident Management and Return To Duty Protocol",
+          "type": "33",
+          "url": "http://jackdigliani.com/uploads/3/4/5/1/34518973/cirt_critical_incident_management_and_return_to_duty.pdf"
+        },
+        "depressionScreen": {
+          "analyticsName": "depressionScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Depression Screen",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/depression/?ref=OCV"
+        },
+        "developingAComrehensiveLEOSuicidePreventionProgram": {
+          "analyticsName": "developingAComrehensiveLEOSuicidePreventionProgram|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Developing a Comprehensive LEO Suicide Prevention Program",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_developingAComprehensiveLEOSuicidePreventionProgram.json"
+        },
+        "diyToolsResources": {
+          "analyticsName": "diyToolsResources|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "DIY Tools Resources",
+          "type": "6",
+          "url": "https://screening.mhanational.org/diy/"
+        },
+        "eatingDisorderScreen": {
+          "analyticsName": "eatingDisorderScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Eating Disorder Screen",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/eating-disorder?ref=OCV"
+        },
+        "educationalResources": {
+          "analyticsName": "educationalResources|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Educational Resources",
+          "type": "6",
+          "url": "https://www.consumerfinance.gov/consumer-tools/"
+        },
+        "effectsOfSleepDeprivation": {
+          "analyticsName": "effectsOfSleepDeprivation|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "The Effects of Sleep Deprivation",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjJSSZPFUt_X_y9raCRpiXzO"
+        },
+        "emergencyInfo": {
+          "analyticsName": "criticalContacts|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Critical Contacts",
+          "type": "52",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_emergencyInformation.json"
+        },
+        "emergencyResponderExhaustionSyndrome": {
+          "analyticsName": "emergencyResponderExhaustionSyndrome|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Emergency Responder Exhaustion Syndrome",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_emergencyResponderExhaustionSyndromeERES.json"
+        },
+        "emotionalSuppressionLeadsToDepression": {
+          "analyticsName": "emotionalSuppressionLeadsToDepression|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Emotional Suppression Leads to Depression",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_emotionalSuppressionLeadsToDepression.json"
+        },
+        "emotionalSurvivalForLawEnforcement": {
+          "analyticsName": "whenYoureInCrisis|PATH",
+          "image": "",
+          "subtypes": [
+            "external"
+          ],
+          "title": "Emotional Survival for Law Enforcement",
+          "type": "6",
+          "url": "https://emotionalsurvival.com"
+        },
+        "familyCommunication": {
+          "analyticsName": "familyCommunication|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Family Communication",
+          "type": "33",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/files/OCV%20Wellness%20Financial%20Literacy.pdf"
+        },
+        "familySupportResources": {
+          "analyticsName": "familyPeerSupportResources|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "people_group_filled",
+          "subtypes": [],
+          "title": "Family Support Resources",
+          "type": "100",
+          "url": "familyPeerSupportResources"
+        },
+        "financialManagementResources": {
+          "analyticsName": "financialWellness|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "dollar_coin_filled",
+          "subtypes": [],
+          "title": "Financial Wellness",
+          "type": "100",
+          "url": "financialManagement"
+        },
+        "financialPlanningInformation": {
+          "analyticsName": "financialPlanningInformation|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Financial Planning Information",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/contact_financialPlanningInformation.json"
+        },
+        "financialWellBeingQuiz": {
+          "analyticsName": "financialWellBeingQuiz|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Financial Well Being Quiz",
+          "type": "6",
+          "url": "https://www.consumerfinance.gov/consumer-tools/financial-well-being/"
+        },
+        "firefighterPeerSupportTeamManual": {
+          "analyticsName": "firefighterPeerSupportTeamManual|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Firefighter Peer Support Team Manual",
+          "type": "33",
+          "url": "http://www.jackdigliani.com/uploads/3/4/5/1/34518973/pst_manual_ff_6.0__nov_2019.pdf"
+        },
+        "firstResponderChildrensFoundation": {
+          "analyticsName": "firstResponderChildrensFoundation|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "First Responder Children's Foundation",
+          "type": "6",
+          "url": "https://1strcf.org/?gad_source=1&gclid=CjwKCAjwnK60BhA9EiwAmpHZw97D9Ss_3Xuc7rgFqfBzBPJm-yNPlSmVpwdpmvz_Q53oXQVhNbV7SxoCn-8QAvD_BwE"
+        },
+        "fitnessScreeningDoctorVisit": {
+          "analyticsName": "fitnessScreeningDoctorVisit|PATH",
+          "image": "",
+          "subtype": "0",
+          "title": "Fitness Screening Doctor Visit",
+          "type": "33",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/files/doctor's%20visit.pdf"
+        },
+        "gradedReEntryToFullDutyExample": {
+          "analyticsName": "gradedReEntryToFullDutyExample|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Graded Re-Entry to Full Duty Example",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_gradedReEntryToFullDutyExample.json"
+        },
+        "healthLivingSleepAudioPlaylist": {
+          "analyticsName": "healthLivingSleepAudioPlaylist|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Audio Playlist - Sleep",
+          "type": "68",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_healthLivingSleepAudioPlaylist.json"
+        },
+        "healthyEating": {
+          "analyticsName": "healthyEating|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Healthy Eating",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a78762701/public/contact_healthyEatingArticles.json"
+        },
+        "healthyLiving": {
+          "analyticsName": "healthyEatingResources|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "arm_strong_filled",
+          "submenuID": "healthyLiving",
+          "subtypes": [],
+          "title": "Healthy Living",
+          "type": "62",
+          "url": ""
+        },
+        "healthyLivingAndExerciseAudio": {
+          "analyticsName": "healthyLivingAndExerciseAudio|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Audio Playlist - Exercise",
+          "type": "68",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_healthyLivingAndExerciseAudio.json"
+        },
+        "healthyLivingAndNutritionAudio": {
+          "analyticsName": "healthyLivingAndNutritionAudio|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Audio Playlist - Nutrition",
+          "type": "68",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_healthyLivingAndNutritionAudio.json"
+        },
+        "healthyLivingExercise": {
+          "analyticsName": "healthyLivingExercise|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "arm_strong_filled",
+          "subtypes": [],
+          "title": "Healthy Living: Exercise",
+          "type": "100",
+          "url": "exercise"
+        },
+        "healthyLivingNutrition": {
+          "analyticsName": "healthyLivingNutrition|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "apple_filled",
+          "subtypes": [],
+          "title": "Healthy Living: Nutrition",
+          "type": "100",
+          "url": "nutrition"
+        },
+        "healthyLivingSleep": {
+          "analyticsName": "healthyLivingSleep|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "night_moon_filled",
+          "subtypes": [],
+          "title": "Healthy Living: Sleep",
+          "type": "100",
+          "url": "sleep"
+        },
+        "helpline": {
+          "analyticsName": "helpline|PATH",
+          "backgroundHex": "#4caf50",
+          "buttonHex": "#4caf50",
+          "image": "",
+          "subtypes": [],
+          "textHex": "#FFFFFF",
+          "title": "GET HELP NOW",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/contact_emergencyHelpline.json"
+        },
+        "howToMeditate": {
+          "analyticsName": "howToMeditate|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "How To Meditate",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_howToMeditate.json"
+        },
+        "hydrationReminder": {
+          "analyticsName": "hydrationReminder|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Hydration Reminder",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_hydrationRemidner.json"
+        },
+        "iACPFinanicalLiteracy": {
+          "analyticsName": "iACPFinanicalLiteracy|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "IACP Finanical Literacy",
+          "type": "33",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/files/OCV%20Wellness%20Financial%20Literacy.pdf"
+        },
+        "lawEnforcementCriticalIncidentInformationBooklet": {
+          "analyticsName": "lawEnforcementCriticalIncidentInformationBooklet|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Law Enforcement Critical Incident Information Booklet",
+          "type": "33",
+          "url": "http://jackdigliani.com/uploads/3/4/5/1/34518973/le_critical_incident_information_2.pdf"
+        },
+        "lawEnforcementPeerSupportTeamManual": {
+          "analyticsName": "lawEnforcementPeerSupportTeamManual|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Law Enforcement Peer Support Team Manual",
+          "type": "33",
+          "url": "http://jackdigliani.com/uploads/3/4/5/1/34518973/pst_manual_le_8_nov_2019.pdf"
+        },
+        "localChaplains": {
+          "analyticsName": "localResourcesChaplains|PATH",
+          "formAutofillFieldID": "",
+          "formDetailID": "",
+          "image": "",
+          "subtype": "0",
+          "subtypes": [],
+          "title": "Local Chaplains",
+          "type": "1",
+          "url": ""
+        },
+        "localClinicians": {
+          "analyticsName": "localResourcesClinicians|PATH",
+          "formAutofillFieldID": "",
+          "formDetailID": "",
+          "image": "",
+          "subtype": "0",
+          "subtypes": [],
+          "title": "Local Clinicians",
+          "type": "1",
+          "url": ""
+        },
+
+    
+        "makeItSafePoliceOfficerInitiative": {
+          "analyticsName": "makeItSafePoliceOfficerInitiative|PATH",
+          "changeMe": "a19336830",
+          "image": "",
+          "subtypes": [],
+          "title": "Make It Safe Police Officer Initiative",
+          "type": "0",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/blog_makeItSafePoliceOfficerInitiative.json"
+        },
+        "managingMedia": {
+          "analyticsName": "managingMedia|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Managing Media",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_managingMedia.json"
+        },
+        "managingStress": {
+          "analyticsName": "managingStress|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Managing Stress",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/contact_managingStress.json"
+        },
+        "media": {
+          "analyticsName": "media|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "play_filled",
+          "imageURL": "https://cdn.myocv.com/ocvapps/a71936801/files/videoResources.png",
+          "subtypes": [],
+          "title": "Media",
+          "type": "100",
+          "url": "media"
+        },
+        "mentalHealthMonthToolkit": {
+          "analyticsName": "2024MentalHealthMonthToolkit|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "2024 Mental Health Month Toolkit",
+          "type": "6",
+          "url": "https://www.mhanational.org/mental-health-month"
+        },
+        "mentalHealthStartsWithPhysicalHealth": {
+          "analyticsName": "openingUpOffTheJob|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Mental Health Starts with Physical Health",
+          "type": "6",
+          "url": "https://porac.org/article/mental-health-starts-with-physical-health/"
+        },
+        "myPlan": {
+          "analyticsName": "myPlan|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "checklist_filled",
+          "subtypes": [],
+          "title": "My Plan",
+          "type": "100",
+          "url": "myPlan"
+        },
+        "nYSMentalHealthProviders": {
+          "analyticsName": "nYSMentalHealthProviders|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "NYS Mental Health Providers",
+          "type": "6",
+          "url": "https://my.omh.ny.gov/analytics/saw.dll?PortalPages&PortalPath=/shared/Mental%20Health%20Program%20Directory/_portal/Mental%20Health%20Program%20Directory&page=Basic%20Search&Action=Navigate"
+        },
+        "nutritionalNeedsFlyer": {
+          "analyticsName": "nutritionalNeedsFlyer|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Nutritional Needs Flyer",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjKe6BLJSRhaZqWrSXIJzNeL"
+        },
+        "officerToolkit": {
+          "analyticsName": "officerToolkit|PATH",
+          "image": "",
+          "imageURL": "",
+          "subtypes": [],
+          "title": "Officer Toolkit",
+          "type": "100",
+          "url": "officerToolkit"
+        },
+        "otherWellnessResources": {
+          "analyticsName": "otherWellnessResources|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "book_filled",
+          "imageURL": "",
+          "subtypes": [],
+          "title": "Other Wellness Resources",
+          "type": "100",
+          "url": "otherWellnessResources"
+        },
+        "otherWellnessResourcesAudioPlaylist": {
+          "analyticsName": "otherWellnessResourcesAudioPlaylist|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Audio Playlist - Other Resources",
+          "type": "68",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_otherWellnessAudio.json"
+        },
+        "overcomingThoughts": {
+          "analyticsName": "overcomingThoughts|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Overcoming Thoughts",
+          "type": "6",
+          "url": "https://screening.mhanational.org/activity/overcoming-thoughts/"
+        },
+        "parentScreen": {
+          "analyticsName": "parentScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Parent Screen (Your Child's Mental Health)",
+          "type": "6",
+          "url": "https://screening.mentalhealthamerica.net/screening-tools/parent/?ref=OCV"
+        },
+        "postpartumDepressionScreen": {
+          "analyticsName": "postpartumDepressionScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Postpartum Depression Screen (New & Expecting Parents)",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/postpartum-depression/?ref=OCV"
+        },
+        "prehabInjuryPrevention": {
+          "analyticsName": "prehabInjuryPrevention|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Pre-hab Injury Prevention",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/contact_preHabInjuryPrevention.json"
+        },
+        "programFeedbackForm": {
+          "analyticsName": "programFeedbackForm|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Program Feedback Form",
+          "type": "5",
+          "url": ""
+        },
+        "psychologicalFirstAidKit": {
+          "analyticsName": "psychologicalFirstAidKit|PATH",
+          "image": "",
+          "subtypes": [
+            "localExport"
+          ],
+          "title": "Psychological First Aid Kit",
+          "type": "5",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/form_psychologicalFirstAidKit.json"
+        },
+        "psychosisScreen": {
+          "analyticsName": "psychosisScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Psychosis Screen",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/psychosis?ref=OCV"
+        },
+        "ptsdResourceVideos": {
+          "analyticsName": "ptsdResourceVideos|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "PTSD Resource Videos",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjIFlaxusZMYviUxTqqFYAwf"
+        },
+        "ptsdScreen": {
+          "analyticsName": "ptsdScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "PTSD Screen",
+          "type": "6",
+          "url": "https://screening.mentalhealthamerica.net/screening-tools/ptsd/?ref=OCV"
+        },
+        "recoveryAfterTheTraumaPostTraumaticGrowth": {
+          "analyticsName": "recoveryAfterTheTraumaPostTraumaticGrowth|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Recovery After the Trauma–Post Traumatic Growth",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_recoveryAfterTheTraumaPostTraumaticGrowth.json"
+        },
+        "resourcesOnSleep": {
+          "analyticsName": "resourcesOnSleep|PATH",
+          "changeMe": "a19336830",
+          "image": "",
+          "subtypes": [],
+          "title": "Resources On Sleep",
+          "type": "0",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/blog_resourcesOnSleep.json"
+        },
+        "scsoWellness": {
+          "analyticsName": "scsoWellness|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "",
+          "imageURL": "https://cdn.myocv.com/ocvapps/a71936801/files/Seneca%20NY%20Wellness%20Icon.png",
+          "submenuID": "scsoWellness",
+          "subtypes": [],
+          "title": "SCSO Wellness",
+          "type": "62",
+          "url": ""
+        },
+        "selfAssessments": {
+          "analyticsName": "selfAssessments|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "mental_health_filled",
+          "subtypes": [],
+          "title": "Self Assessments",
+          "type": "100",
+          "url": "selfAssessments"
+        },
+        "selfAssessmentsFAQ": {
+          "analyticsName": "selfAssessmentsFAQ|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Self Assessments FAQ",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/page_selfAssessmentsFAQ.json"
+        },
+        "senecaNYChaplainSupport": {
+          "analyticsName": "chaplainSupport|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Chaplain Support",
+          "type": "1",
+          "url": ""
+        },
+        "senecaNYSheriffThompsonSWellnessMessage": {
+          "analyticsName": "sheriffThompsonSWellnessMessage|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Sheriff Thompson's Wellness Message",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/page_senecaNYSheriffThompsonSWellnessMessage.json"
+        },
+        "senecaNYWellnessFeedbackForm": {
+          "analyticsName": "wellnessFeedbackForm|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Wellness Feedback Form",
+          "type": "5",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/form_senecaNYWellnessFeedbackForm.json"
+        },
+        "shiftSchedulesSleepDisorders": {
+          "analyticsName": "shiftSchedulesSleepDisorders|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Shift Schedules & Sleep Disorders",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_sleepDisordersWorkShiftsAndOfficerWellness.json"
+        },
+        "sleepDeprivation": {
+          "analyticsName": "sleepDeprivation|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Sleep Deprivation",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_sleepDeprivation.json"
+        },
+        "sleepDeprivationVideoFlyer": {
+          "analyticsName": "sleepDeprivationVideoFlyer|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "The Effects of Sleep Deprivation",
+          "type": "33",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/files/Axon%20Family%20Wellness-Sleep%20Deprivation.pdf"
+        },
+        "storiesOfHopeAndRecovery": {
+          "analyticsName": "storiesOfHopeAndRecovery|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Stories of Hope and Recovery",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjL_HQ9LATsRZnWL2HpUbPXh"
+        },
+        "stressManagement": {
+          "analyticsName": "stressManagement|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "mental_health_brain_filled",
+          "subtypes": [],
+          "title": "Stress Management",
+          "type": "100",
+          "url": "stress"
+        },
+        "stressManagementAudioPlaylist": {
+          "analyticsName": "stressManagementAudioPlaylist|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Audio Playlist - Stress Management",
+          "type": "68",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_stressManagementAudioPlaylist.json"
+        },
+        "stressResourceVideos": {
+          "analyticsName": "stressResourceVideos|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Stress Resource Videos",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjL6gZIs7RCaoVyQipxEguEg"
+        },
+        "suicideInformationAndSupport": {
+          "analyticsName": "suicideInformationAndSupport|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Information and Support",
+          "type": "6",
+          "url": "https://screening.mhanational.org/suicide/"
+        },
+        "suicideInterventionAndPrevention": {
+          "analyticsName": "suicideInterventionAndPrevention|PATH",
+          "backgroundHex": "#1C4700",
+          "image": "health_shield_filled",
+          "subtypes": [],
+          "title": "Suicide Awareness",
+          "type": "100",
+          "url": "suicide"
+        },
+        "suicideInterventionAndPreventionAudioPlaylist": {
+          "analyticsName": "suicideInterventionAndPreventionAudioPlaylist|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Audio Playlist - Suicide Awareness",
+          "type": "68",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/int_suicideInterventionAndPrevention.json"
+        },
+        "suicideIsNotPainless": {
+          "analyticsName": "suicideIsNotPainless|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Suicide Is Not Painless",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_suicideIsNotPainless.json"
+        },
+        "suicideResourceVideos": {
+          "analyticsName": "suiicideResourceVideos|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Suicide Resource Videos",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjIGl3GaUZFsi_mTXYo7Voh8"
+        },
+        "suicideSupportNumbers": {
+          "analyticsName": "suicideSupportNumbers|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Support Numbers",
+          "type": "1",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/contact_emergencyHelpline.json"
+        },
+        "testimonials": {
+          "analyticsName": "testimonials|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Testimonials",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjKaNZwmklvlFqS7bDRW17dV"
+        },
+        "theStressResponse": {
+          "analyticsName": "theStressResponse|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "The Stress Response",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_theStressResponse.json"
+        },
+        "thinkAhead": {
+          "analyticsName": "thinkAhead|PATH",
+          "image": "",
+          "subtypes": [
+            "localExport"
+          ],
+          "title": "Think Ahead: Personal Plan for Emergencies",
+          "type": "5",
+          "url": "https://cdn.myocv.com/ocvapps/a78762701/public/form_thinkAhead.json"
+        },
+        "warningSidesOfSuicide": {
+          "analyticsName": "warningSignsOfSuicide|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Warning Signs",
+          "type": "100",
+          "url": "warningSidesOfSuicide"
+        },
+        "warningSidesOfSuicideArticleOne": {
+          "analyticsName": "warningSidesOfSuicideArticleOne|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "General Warning Signs",
+          "type": "6",
+          "url": "https://afsp.org/risk-factors-protective-factors-and-warning-signs/"
+        },
+        "warningSidesOfSuicideArticleTwo": {
+          "analyticsName": "warningSidesOfSuicideArticleTwo|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Warning Signs for Police",
+          "type": "6",
+          "url": "https://amuedge.com/silent-suffering-warning-signs-and-steps-to-prevent-police-suicide/"
+        },
+        "warningSidesOfSuicideYoutubePlaylist": {
+          "analyticsName": "warningSidesOfSuicideYoutubePlaylist|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Warning Signs Videos",
+          "type": "37",
+          "url": "PLuQ0LbwSEVjLT9cCb8kC2ftWxEE02I72Q"
+        },
+        "wellnessNews": {
+          "analyticsName": "wellnessNews|PATH",
+          "changeMe": "a71936801",
+          "backgroundHex": "#1C4700",
+          "image": "news_filled",
+          "subtypes": [],
+          "title": "Wellness News",
+          "type": "0",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/public/blog_wellnessNews.json"
+        },
+        "whatHappensAfterRetirement": {
+          "analyticsName": "whatHappensAfterRetirement|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "What Happens After Retirement",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_whatHappensAfterRetirement.json"
+        },
+        "whatIsDepression": {
+          "analyticsName": "whatIsDepression|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "What is Depression?",
+          "type": "2",
+          "url": "https://cdn.myocv.com/ocvapps/a19336830/public/page_whatIsDepression.json"
+        },
+        "workoutPrograms": {
+          "analyticsName": "workoutPrograms|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Workout Programs",
+          "type": "33",
+          "url": "https://cdn.myocv.com/ocvapps/a71936801/files/RAS%20Weelky%20Planner.pdf"
+        },
+        "yourWellnessMessage": {
+          "analyticsName": "yourWellnessMessage|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "ACSO's Wellness Message",
+          "type": "2",
+          "url": ""
+        },
+        "youthScreen": {
+          "analyticsName": "youthScreen|PATH",
+          "image": "",
+          "subtypes": [],
+          "title": "Youth Mental Health Screen",
+          "type": "6",
+          "url": "https://screening.mhanational.org/screening-tools/youth/?ref=OCV"
+        }
+      },
+    
+      "launchPopups": [
+        {
+          "items": [
+            "openSettings"
+          ],
+          "popupDesc": "Our app supports your phone's font size settings, includes a new search index in the corner, works in landscape orientation, features updated colors for better visibility and color contrast, updated button sizing, and more.\nNOTE: Based upon your device font size that is set you may see a different layout to provide the best experience to navigate the app.\nIf you want to control your layout or make a change to your font sizing on the OS level, please view instructions in the settings.",
+          "popupShowOnce": true,
+          "popupTitle": "New App Accessibility Support"
+        }
+      ],
+      
+      "stylesheet": {
+        "colors": [
+          {
+            "hex": "#1C4700",
+            "hexDark": "#1C4700",
+            "id": "primary"
+          },
+          {
+            "hex": "#666666",
+            "hexDark": "#666666",
+            "id": "secondary"
+          },
+          {
+            "hex": "#EEEEEE",
+            "hexDark": "#EEEEEE",
+            "id": "backgroundGray"
+          },
+          {
+            "hex": "#FFFFFF",
+            "hexDark": "#FFFFFF",
+            "id": "white"
+          },
+          {
+            "hex": "#121212",
+            "hexDark": "#121212",
+            "id": "darkText"
+          },
+          {
+            "hex": "#4caf50",
+            "hexDark": "#4caf50",
+            "id": "green"
+          }
+        ]
+      },
+      "vertical": "theSheriffApp"
+}
