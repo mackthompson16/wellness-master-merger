@@ -265,6 +265,15 @@ def merge_overlay_into_master(master: Any, overlay: Any, path: List[str]) -> Any
             result.append(copy.deepcopy(o))
         return result
 
+    if (
+        master is not None
+        and overlay is not None
+        and not isinstance(master, (dict, list))
+        and not isinstance(overlay, (dict, list))
+    ):
+        # Prefer master when both leaves exist and only the scalar differs.
+        return copy.deepcopy(master)
+
     return copy.deepcopy(overlay)
 
 
@@ -301,67 +310,103 @@ def merge_outputs(
 
 
 # ---------- Add / Override ----------
-def _add_missing_from_master(master_node: Any, working_node: Any, path: List[str]) -> Any:
-    if master_node is None:
-        return copy.deepcopy(working_node)
+def _remove_final_nodes(target: Any, remove_spec: Any) -> None:
+    """
+    Walk each branch in remove_spec; delete the deepest node if it exists.
+    """
+    if not isinstance(remove_spec, dict) or not isinstance(target, dict):
+        return
 
-    if working_node is None:
-        return copy.deepcopy(master_node)
-
-    if isinstance(master_node, dict) and isinstance(working_node, dict):
-        result = copy.deepcopy(working_node)
-        for k, m_val in master_node.items():
-            if k not in result:
-                result[k] = copy.deepcopy(m_val)
+    for key, child in remove_spec.items():
+        if key not in target:
+            continue
+        target_child = target.get(key)
+        if isinstance(child, dict) and child:
+            if isinstance(target_child, dict):
+                _remove_final_nodes(target_child, child)
             else:
-                result[k] = _add_missing_from_master(m_val, result[k], path + [k])
+                target.pop(key, None)
+        else:
+            target.pop(key, None)
+
+
+def _merge_update_list(existing: Any, updates: List[Any], path: List[str]) -> List[Any]:
+    if not isinstance(existing, list):
+        return copy.deepcopy(updates)
+    result = copy.deepcopy(existing)
+    seen_norms = {normalize(item, path) for item in result}
+    for item in updates:
+        norm = normalize(item, path)
+        if norm in seen_norms:
+            continue
+        seen_norms.add(norm)
+        result.append(copy.deepcopy(item))
+    return result
+
+
+def _apply_updates(current: Any, updates: Any, path: List[str]) -> Any:
+    if updates is None:
+        return copy.deepcopy(current)
+
+    if isinstance(updates, dict):
+        if not isinstance(current, dict):
+            current = {} if current is None else current
+        if not isinstance(current, dict):
+            return copy.deepcopy(updates)
+        result = copy.deepcopy(current)
+        for k, update_val in updates.items():
+            existing = result.get(k)
+            if isinstance(update_val, dict):
+                result[k] = _apply_updates(existing, update_val, path + [k])
+            elif isinstance(update_val, list):
+                result[k] = _merge_update_list(existing, update_val, path + [k])
+            else:
+                result[k] = copy.deepcopy(update_val)
         return result
 
-    if isinstance(master_node, list) and isinstance(working_node, list):
-        result = copy.deepcopy(working_node)
-        seen_norms = {normalize(item, path) for item in result}
-        for m_item in master_node:
-            norm = normalize(m_item, path)
-            if norm in seen_norms:
-                continue
-            seen_norms.add(norm)
-            result.append(copy.deepcopy(m_item))
-        return result
+    if isinstance(updates, list):
+        return _merge_update_list(current, updates, path)
 
-    # If types differ or are scalar, keep the working value (add does not override).
-    return copy.deepcopy(working_node)
+    return copy.deepcopy(updates)
 
 
-def add_to_file(
+def _select_instructions_for_header(
+    instructions: Any, header: str, header_set: set
+) -> Any:
+    if not isinstance(instructions, dict):
+        return None
+    contains_header_keys = any(k in header_set for k in instructions.keys())
+    if contains_header_keys:
+        return instructions.get(header)
+    return instructions
+
+
+def update_from_master(
     master: Dict[str, Any],
     input_manifest: Dict[str, Any],
     input_headers: List[str],
-    mode: str,
 ) -> Dict[str, Any]:
-    mode_lower = mode.lower()
+    header_set = set(input_headers)
+    update_spec = master.get("update") if isinstance(master, dict) else None
+    remove_spec = master.get("remove") if isinstance(master, dict) else None
+
     updated_manifest: Dict[str, Any] = {}
 
     for header, working_header in input_manifest.items():
-        if header not in input_headers:
-            updated_manifest[header] = copy.deepcopy(working_header)
-            continue
-
-        master_header = master.get(header)
         current = copy.deepcopy(working_header)
 
-        if mode_lower == "add" and master_header is not None:
-            current = _add_missing_from_master(master_header, current, [])
-        elif mode_lower in {"change", "override"} and isinstance(master_header, dict):
-            master_features = master_header.get("features", {})
-            if isinstance(master_features, dict):
-                working_features = current.get("features")
-                if not isinstance(working_features, dict):
-                    working_features = {}
-                else:
-                    working_features = copy.deepcopy(working_features)
-                for feat_name, feat_node in master_features.items():
-                    working_features[feat_name] = copy.deepcopy(feat_node)
-                current["features"] = working_features
+        if header in header_set:
+            removal_for_header = _select_instructions_for_header(
+                remove_spec, header, header_set
+            )
+            if removal_for_header:
+                _remove_final_nodes(current, removal_for_header)
+
+            update_for_header = _select_instructions_for_header(
+                update_spec, header, header_set
+            )
+            if update_for_header:
+                current = _apply_updates(current, update_for_header, [])
 
         updated_manifest[header] = current
 
@@ -412,8 +457,8 @@ master = unwrap_manifest(master_raw)
 input_headers = select_app_headers(input_manifest)
 mode_lower = mode.lower()
 
-if mode_lower in {"add", "change", "override"}:
-    modified = add_to_file(master, input_manifest, input_headers, mode_lower)
+if mode_lower in {"update", "add", "change", "override"}:
+    modified = update_from_master(master, input_manifest, input_headers)
     return modified
 
 diff_overlay, diff_count_master, diff_count_app, prefixes = build_diff(

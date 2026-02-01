@@ -1,124 +1,134 @@
-# SCRIPT MERGE AND SPLIT TOOL
+﻿# SCRIPT MERGE AND SPLIT TOOL
 
-This script manages the manifests of input jsons, optionally using a master to track changes.
+This script manages manifests for input JSONs and an optional master manifest for updates, audits, and merges.
 
-In add mode:
--  iterate through all of the working headers and add the corresponding features that exist in the input
+## Modes
+- Update: Use the master manifest to stage changes for the working manifest. All additions/changes live under an `update` section (path -> payload). Removals live under a `remove` section. For each removal branch, walk to the deepest node and delete that final node from the working header if it exists. Apply removals before updates. The master can carry new data with explicit paths; follow the path until it no longer exists in the working header, then append the data at that point.
+- Audit: Produce JSON that reports differences between master and each working header: items present only in master (`diff_master`) and items present only in the working header (`diff_app`).
+- Merge: Produce one JSON by overlaying `diff_app` content onto master for every header. If the final leaf nodes match in path but the scalar value (string/number) differs, always keep the master value. Do not apply this override to lists; lists are treated as sets and order is ignored.
 
-In change mode:
-- Override the feature level nodes (featureHub/feature) of each of the header trees.
+## Config
+- Ignored keys: `IGNORED_KEYS = {"url", "imageURL", "analyticsName", "appID", "backgroundImageURL"}`
+- Ignored header prefixes: `IGNORED_PREFIXES = {"30", "demo", "TEST", "OLD", "_", "tier"}`
 
-In audit mode produce sections in the output:
--  diff_master: the items in master that are not in the working header tree
--  diff_app: the items in the working header tree that are not in master
+## JSON examples
+- Update/remove:
+```json
+// master (instructions)
+{
+  "manifest": {
+    "update": {
+      "headerA": { "features": { "newFeature": { "text": "Hello" } } }
+    },
+    "remove": {
+      "headerA": { "features": { "oldFeature": {} } }
+    }
+  }
+}
 
-In merge mode produce merged_manifest:
-  the combination of the master and each header tree,
-  achieved by overlaying the diff_app content onto master.
+// input (working)
+{
+  "manifest": {
+    "headerA": { "features": { "oldFeature": { "text": "Deprecated" } } }
+  }
+}
 
-## Config:
-- Ignore these fields:
-    IGNORED_KEYS = {"url", "imageURL", "analyticsName", "appID", "backgroundImageURL"}
-- Ignore these headers:
-    IGNORED_PREFIXES = {"30", "demo", "TEST", "OLD", "_", "tier"}
+// output (update mode)
+{
+  "manifest": {
+    "headerA": { "features": { "newFeature": { "text": "Hello" } } }
+  }
+}
+```
+- Merge preference for master leaf:
+```json
+// master
+{ "manifest": { "headerA": { "features": { "welcome": { "text": "From master" } } } } }
+// overlay (diff_app)
+{ "headerA": { "features": { "welcome": { "text": "From app" }, "extra": { "text": "New" } } } }
+// merged
+{ "manifest": { "headerA": { "features": { "welcome": { "text": "From master" }, "extra": { "text": "New" } } } } }
+```
 
 # Implement these functions
 
-### build_diff(input_manifest, master, input_headers):
+### build_diff(input_manifest, master, input_headers, mode):
     input_manifest = working JSON
-    master = find diff from this file
+    master = master JSON
     input_headers = working headers
 
     for every header:
+        if mode is audit, produce two diffs: master -> app and app -> master
+            {
+                "diff_app": { header_0:{}, ...., header_n:{} },
+                "diff_master": { header_0:{}, ...., header_n:{} },
+            }
+        if mode is merge, only produce app -> master
+            { header_0:{}, ...., header_n:{} }
 
-        if mode is audit, produce two diffs: one from master->app and app->master
-        thus, follow the schematic:
-        {
-            "diff_app" : { header_0:{},....header_n:{}},
-            "diff_master" : { header_0:{},....header_n:{}},
-        }
-        if mode is merge, just produce app -> master
-        {
-            header_0:{},....header_n:{},
-        }
+        traverse master and header linearly (skip IGNORED_KEYS).
 
-        we have two roots to traverse: master and header.
-        linearly traverse the entire tree (skipping IGNORED_KEYS).
-
-
-        At each Node:
-            If the node is a list, treat as a set; order does not matter.
-            If both the master and header have the node, continue
-            If mode is audit:
-                If master contains a node that is not in the header tree:
-                    add 1 to diff_count_master
-                    add the path and data to "diff_master"{"header":{}}
-            If the header tree contains a node that is not in master:
+        At each node:
+            If the node is a list, treat it as a set; order does not matter.
+            If both master and header have the node, continue.
+            If mode is audit and master has a node missing in header:
+                add 1 to diff_count_master
+                record the path/data in diff_master for that header
+            If header has a node missing in master:
                 add 1 to diff_count_app
-                add the path to the correct path of our output data
+                record the path/data in diff_app for that header
 
         Extract_Prefix(header, input_manifest)
 
     return diff_overlay, diff_count_master, diff_app, diff_count_app, prefixes
 
 ### Extract_Prefix(header, input_manifest):
-- this is used to find the correct analytics name to track.
-- take the first value located at: header.features.(feature).analyticsName
-    that is not "openSettings" (it will be the second value)
-    if we find: "analyticsName": "IN|lawrenceCountyIN|resilienceReps"
-    store it as:
-    prefixes[header] = "IN|lawrenceCountyIN"
-    we can assume they will all follow that format of 3 parts with "|".
-    return prefixes
+- Find the first analytics name at: header.features.(feature).analyticsName that is not "openSettings" (it will be the second value).
+- When you find something like: "analyticsName": "IN|lawrenceCountyIN|resilienceReps"
+    store: prefixes[header] = "IN|lawrenceCountyIN"
+- Assume they all follow the format of 3 pipe-separated parts.
+- return prefixes
 
-### add_to_file(master, input_manifest):
-    for every header in input manifest:
-        If add: 
-            traverse the input headers, down the path that the master follows.
-            find the first node in master that doesnt exist in this header, and add the corresponding contents here. 
-        If override:
-            traverse the input headers, down to the feature level contents. replace the contents with whatever master has (if it doesn't exist, add it). 
-            e.g. replace working_header.features.(feature)  withmaster.features.(feature name)
-    return modified JSON
-
+### update(master, input_manifest):
+    For every header in the input:
+        Apply master.remove (if it exists):
+            for every branch in remove, walk down to the deepest node and delete that final node from the working header if present.
+        Apply master.update (add/change content):
+            follow the specified path until it no longer exists in the working header, then append the provided data at that point.
 
 ### merge_outputs(master, overlays, input_headers, prefixes, app_id)
     master = base file
-    overlays = content we need to append
+    overlays = content to append
     app_id = used for changing some data
-    input_headers = working header
+    input_headers = working headers
 
     start output:
     {
-    "manifest": 
-        {
-        }
+        "manifest": {}
     }
-
 
     for every header in input_headers:
         add manifest.header to the output.
         add master to manifest.header
 
-        now we have to do the merge part.
-        traverse linearly through overlays, follow along with the manifest.header
-        when we reach the depth where this node does not exist in the master, append it.
-        Continue until all of the content on the overlay is added into the correct path in the output
+        perform the merge:
+            traverse overlays alongside manifest.header
+            when a node in overlays is missing from master, append it to manifest.header
+            if you reach the end of a diff path and only the final leaf value differs, keep the master scalar value (not applied to lists)
+            continue until all overlay content is merged into the correct path in the output
 
-        This last part is like a ctrl-f replace: 
+        replace placeholders:
             find-and-replace-all("ChangeMe", appID)
             find-and-replace-all("PATH", prefixes[Header])
-    
+
     return output_json
 
 
-### write_console_log()
+### write_console_log(input_headers, diff_count_app, diff_count_master)
+    print the number of diffs found for each header
 
-    show the number of diffs found for each header, just print in console
 
-
-## Follow this execution (already valid superblocks):
-
+## Execution flow (already valid superblocks):
 app_id = Input220.value
 mode = Dropdown130.selectedOptionValue
 print("Mode: ", mode)
