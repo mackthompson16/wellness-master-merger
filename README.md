@@ -1,4 +1,4 @@
-﻿# SCRIPT MERGE AND SPLIT TOOL
+﻿# Wellness Management Tool
 
 Keep many app manifests consistent without hand-editing every file. This tool uses a master manifest as the source of truth to update, audit, and merge changes across all app headers.
 
