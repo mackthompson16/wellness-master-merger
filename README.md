@@ -1,11 +1,27 @@
 ﻿# SCRIPT MERGE AND SPLIT TOOL
 
-This script manages manifests for input JSONs and an optional master manifest for updates, audits, and merges.
+Keep many app manifests consistent without hand-editing every file. This tool uses a master manifest as the source of truth to update, audit, and merge changes across all app headers.
+
+At a glance:
+- Update: push additions/changes/removals to all working manifests.
+- Audit: identify what is missing or outdated compared to the master.
+- Merge: consolidate audit differences into a clean output while keeping master values for conflicting leaf scalars.
+
+## Inputs and outputs
+- Inputs: a working manifest (the app set) and a master manifest (the source of truth).
+- Output (Audit mode): a JSON report of differences.
+- Output (Merge/Update modes): a merged manifest ready to use.
 
 ## Modes
 - Update: Use the master manifest to stage changes for the working manifest. All additions/changes live under an `update` section (path -> payload). Removals live under a `remove` section. For each removal branch, walk to the deepest node and delete that final node from the working header if it exists. Apply removals before updates. The master can carry new data with explicit paths; follow the path until it no longer exists in the working header, then append the data at that point.
 - Audit: Produce JSON that reports differences between master and each working header: items present only in master (`diff_master`) and items present only in the working header (`diff_app`).
 - Merge: Produce one JSON by overlaying `diff_app` content onto master for every header. If the final leaf nodes match in path but the scalar value (string/number) differs, always keep the master value. Do not apply this override to lists; lists are treated as sets and order is ignored.
+
+## When to use this
+- You manage many manifests that should follow the same structure and content.
+- You want one place to define updates and removals.
+- You need an objective audit report for missing or outdated content.
+- You want to merge differences while preserving master as the source of truth.
 
 ## Config
 - Ignored keys: `IGNORED_KEYS = {"url", "imageURL", "analyticsName", "appID", "backgroundImageURL"}`
@@ -127,6 +143,11 @@ This script manages manifests for input JSONs and an optional master manifest fo
 ### write_console_log(input_headers, diff_count_app, diff_count_master)
     print the number of diffs found for each header
 
+## Practical workflow (high level)
+1) Keep your master manifests updated.
+2) Run Audit to see what is missing or outdated.
+3) Run Merge to produce a clean output that preserves master values for conflicting leaf scalars.
+4) Run Update to push new content or removals across all working manifests.
 
 ## Execution flow (already valid superblocks):
 app_id = Input220.value
