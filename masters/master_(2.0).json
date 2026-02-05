@@ -3799,15 +3799,6 @@
           "type": "6",
           "url": "https://patrolmensdispatch.com/financial-wellness/"
         },
-        "peerSupport2": {
-          "analyticsName": "PATH|peerSupport",
-          "appID": "changeMe",
-          "image": "handshake_filled",
-          "subtypes": [],
-          "title": "Peer Support",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvApps/changeMe/public/page_wellness20DepartmentResources.json"
-        },
         "popularDiets2": {
           "analyticsName": "PATH|popularDiets2",
           "appID": "changeMe",

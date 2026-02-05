@@ -397,14 +397,7 @@
           "type": "62",
           "url": ""
         },
-        "commissionerWelcome": {
-          "analyticsName": "PATH|commissionerWelcome",
-          "imageURL": "https://cdn.myocv.com/ocvapps/a142810454/files/newYorkCityWelcomeIconMay25.png",
-          "subtypes": [],
-          "title": "Commissioner Welcome",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvapps/a142810454/public/page_commissionerWelcome.json"
-        },
+       
         "composure2": {
           "analyticsName": "PATH|composure2",
           "appID": "changeMe",
@@ -442,14 +435,7 @@
           "type": "26",
           "url": "https://cdn.myocv.com/ocvapps/changeMe/public/gallery_cookout.json"
         },
-        "dOCFacilityMap": {
-          "analyticsName": "PATH|dOCFacilityMap",
-          "image": "",
-          "subtypes": [],
-          "title": "DOCCS Facility Map",
-          "type": "33",
-          "url": "https://cdn.myocv.com/ocvapps/a142810454/files/Facility%20Map.pdf"
-        },
+        
         "dailyPreHabPersonalizedRoutine": {
           "analyticsName": "PATH|dailyPreHabPersonalizedRoutine",
           "appID": "changeMe",
@@ -481,15 +467,7 @@
           "type": "62",
           "url": ""
         },
-        "departmentChaplains": {
-          "analyticsName": "PATH|departmentChaplains",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Chaplains",
-          "type": "1",
-          "url": "https://cdn.myocv.com/ocvapps/a142810454/public/contact_departmentChaplains.json"
-        },
+      
         "generalSpiritualResources": {
           "analyticsName": "PATH|generalSpiritualResources",
           "appID": "changeMe",
@@ -499,70 +477,7 @@
           "type": "1",
           "url": "https://cdn.myocv.com/ocvapps/a142810454/public/contact_generalSpiritualResources.json"
         },
-        "departmentSpiritualResources": {
-          "analyticsName": "PATH|departmentSpiritualResources",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Spiritual Resources",
-          "type": "62",
-          "url": "",
-          "submenuID": "departmentSpiritualResources"
-        },
-        "departmentResourcesFamilyWellness": {
-          "analyticsName": "PATH|departmentResourcesFamilyWellness",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Resources",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvapps/changeMe/public/page_wellness20DepartmentResources.json"
-        },
-        "departmentResourcesFinancialWellness": {
-          "analyticsName": "PATH|departmentResourcesFinancialWellness",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Resources",
-          "type": "1",
-          "url": "https://cdn.myocv.com/ocvapps/a142810454/public/contact_localFinancialResources.json"
-        },
-        "departmentResourcesGeneralFit": {
-          "analyticsName": "PATH|departmentResourcesGeneralFit",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Resources",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvapps/changeMe/public/page_wellness20DepartmentResources.json"
-        },
-        "departmentResourcesGeneralFuel": {
-          "analyticsName": "PATH|departmentResourcesGeneralFuel",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Resources",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvapps/changeMe/public/page_wellness20DepartmentResources.json"
-        },
-        "departmentResourcesGeneralMind": {
-          "analyticsName": "PATH|departmentResourcesGeneralMind",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Resources",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvapps/changeMe/public/page_wellness20DepartmentResources.json"
-        },
-        "departmentResourcesMentalHealth": {
-          "analyticsName": "PATH|departmentResourcesMentalHealth",
-          "appID": "changeMe",
-          "image": "",
-          "subtypes": [],
-          "title": "Department Resources",
-          "type": "2",
-          "url": "https://cdn.myocv.com/ocvapps/changeMe/public/page_wellness20DepartmentResources.json"
-        },
+        
         "doJResources": {
           "analyticsName": "PATH|doJResources",
           "appID": "changeMe",
@@ -2408,26 +2323,7 @@
           ],
           "textHex": ""
         },
-        "departmentSpiritualResources": {
-          "backgroundHex": "#EEEEEE",
-          "backgroundImageAlpha": "0.5",
-          "backgroundImageScaleType": "fit",
-          "backgroundImageURL": "https://cdn.myocv.com/ocvapps/changeMe/files/Submenu%20Background%20Image.png",
-          "buttonHex": "",
-          "circleHex": "#FF0000",
-          "fillHex": "#FFFFFF",
-          "sections": [
-            {
-              "type": "feature",
-              "url": "departmentChaplains"
-            },
-            {
-              "type": "feature",
-              "url": "generalSpiritualResources"
-            }
-          ],
-          "textHex": "#121212"
-        },
+       
         "veteranSupportSubmenu": {
           "backgroundHex": "#EEEEEE",
           "backgroundImageAlpha": "0.5",
@@ -2476,10 +2372,6 @@
             {
               "type": "feature",
               "url": "articlesNewsletters"
-            },
-            {
-              "type": "feature",
-              "url": "dOCFacilityMap"
             }
           ],
           "textHex": "#121212"
@@ -2766,10 +2658,7 @@
           "circleHex": "#FF0000",
           "fillHex": "#FFFFFF",
           "sections": [
-            {
-              "type": "feature",
-              "url": "departmentResourcesFamilyWellness"
-            },
+            
             {
               "type": "feature",
               "url": "responderFamilySubmenu"
@@ -2834,10 +2723,7 @@
           "circleHex": "#FF0000",
           "fillHex": "#FFFFFF",
           "sections": [
-            {
-              "type": "feature",
-              "url": "departmentResourcesFinancialWellness"
-            },
+           
             {
               "type": "feature",
               "url": "financialPlanningSubmenu"
@@ -2862,16 +2748,7 @@
               "type": "video",
               "url": "https://cdn.myocv.com/ocvapps/changeMe/files/(Exercise%20Principles%20V1)%2001.mp4"
             },
-            {
-              "alignment": "left",
-              "textHex": "#121212",
-              "title": "DEPARTMENT RESOURCES",
-              "type": "header"
-            },
-            {
-              "type": "feature",
-              "url": "departmentResourcesGeneralFit"
-            },
+           
             {
               "alignment": "left",
               "textHex": "#121212",
@@ -2982,16 +2859,7 @@
               "type": "video",
               "url": "https://cdn.myocv.com/ocvapps/changeMe/files/(Nutrition%20Principles%20V1)%2001.mp4"
             },
-            {
-              "alignment": "left",
-              "textHex": "#121212",
-              "title": "DEPARTMENT RESOURCES",
-              "type": "header"
-            },
-            {
-              "type": "feature",
-              "url": "departmentResourcesGeneralFuel"
-            },
+           
             {
               "alignment": "left",
               "textHex": "#121212",
@@ -3212,10 +3080,7 @@
               "title": "FAMILY WELLNESS",
               "type": "header"
             },
-            {
-              "type": "feature",
-              "url": "departmentResourcesFamilyWellness"
-            },
+            
             {
               "type": "feature",
               "url": "responderFamilySubmenu"
@@ -3233,10 +3098,7 @@
               "title": "FINANCIAL WELLNESS",
               "type": "header"
             },
-            {
-              "type": "feature",
-              "url": "departmentResourcesFinancialWellness"
-            },
+          
             {
               "type": "feature",
               "url": "financialPlanningSubmenu"
@@ -3250,10 +3112,8 @@
               "title": "SOCIAL & SPIRITUAL WELLNESS",
               "type": "header"
             },
-            {
-              "type": "feature",
-              "url": "departmentChaplains"
-            },
+           
+            
             {
               "type": "feature",
               "url": "spiritualWellnessResources"
@@ -3378,10 +3238,7 @@
               "type": "video",
               "url": "https://cdn.myocv.com/ocvapps/changeMe/files/01%20Dr.%20Lee%20Introduction_v3%20feb2025.mp4"
             },
-            {
-              "type": "feature",
-              "url": "departmentResourcesGeneralMind"
-            },
+            
             {
               "type": "feature",
               "url": "treatmentsAssessments"
@@ -4080,10 +3937,7 @@
           "circleHex": "#FF0000",
           "fillHex": "#FFFFFF",
           "sections": [
-            {
-              "type": "feature",
-              "url": "departmentSpiritualResources"
-            },
+           
             {
               "type": "feature",
               "url": "spiritualWellnessResources"
