@@ -34,7 +34,7 @@ At a glance:
 {
   "manifest": {
     "update": {
-      "headerA": { "features": { "newFeature": { "text": "Hello" } } }
+      "headerA": { "features": { "newFeature": { "text": "Hello" ,} } }
     },
     "remove": {
       "headerA": { "features": { "oldFeature": {} } }

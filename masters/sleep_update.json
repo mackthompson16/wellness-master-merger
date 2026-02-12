@@ -1,0 +1,462 @@
+{
+    "manifest":{
+        "update":{
+        "featureHubs": {
+        "life2": {
+          "components": [
+            { "insert_index" : 2,
+              "payload": {
+                "cards": [
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvapps/a71936801/files/Sleep%20Hygiene-23dec.png",
+                    "featureID": "sleepChallenges"
+                  },
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvapps/a71936801/files/Sleep%20Log-23dec.png",
+                    "featureID": "sleepImprovement"
+                  },
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvapps/a71936801/files/Sleep%20Disorders-23dec.png",
+                    "featureID": "sleepImpacts"
+                  },
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvapps/a71936801/files/Sleep%20Supplements-23dec.png",
+                    "featureID": "sleepEducation"
+                  }
+                ]
+              }}
+              
+          ]
+        },
+        "sleepChallenges": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "youtubePlaylist",
+                "url": "PLiIF0SUvtz50gW2ex30lJ0wlHXHCpuk9D"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepBehaviorBased"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepConditionBased"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleepConditionBased": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "youtubePlaylist",
+                "url": "PLiIF0SUvtz50gW2ex30lJ0wlHXHCpuk9D"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "delay": 0,
+                "ratio": 0.5,
+                "views": []
+              },
+              "type": "mediaWidget"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepShiftSchedule"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepPain"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepMentalHealth"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleepDiary": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "video",
+                "url": "https://cdn.myocv.com/ocvapps/a71936801/files/Dr.%20Leah%20Kaylor%20-%20Sleep%20Diaries.mp4"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "printableSleepDiary"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "digitalSleepDiary"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleepEducation": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "youtubePlaylist",
+                "url": "PLiIF0SUvtz50fFlLP-vgrQB31xm_V2jgA"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepEducationArticles"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleepImpacts": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "youtubePlaylist",
+                "url": "PLiIF0SUvtz51qvZBCYYOWeH9YCETDYi3P"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepRippleEffects"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleepImprovement": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "youtubePlaylist",
+                "url": "PLiIF0SUvtz502lJ-OqiQ9hcVOEabV7NN9"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepDiary"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepSanctuary"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepWindDownRoutine"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepTools"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepPharmacology"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "guidedRelationAudioPlaylist"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        },
+        "sleepbehaviorBased": {
+          "backgroundHex": "greyBackground",
+          "components": [
+            {
+              "payload": {
+                "type": "youtubePlaylist",
+                "url": "PLiIF0SUvtz50gW2ex30lJ0wlHXHCpuk9D"
+              },
+              "type": "videoPlayer"
+            },
+            {
+              "payload": {
+                "delay": 0,
+                "ratio": 0.5,
+                "views": []
+              },
+              "type": "mediaWidget"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepCaffeine"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepAlcohol"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            },
+            {
+              "payload": {
+                "buttons": [
+                  {
+                    "featureID": "sleepNaps"
+                  }
+                ],
+                "style": "solid"
+              },
+              "type": "hotButtons"
+            }
+          ]
+        }},
+
+        "features":{
+        "digitalSleepDiary": {
+          "image": "",
+          "subtypes": [
+            "localExport"
+          ],
+          "title": "Digital Sleep Diary"
+        },
+        "guidedRelationAudioPlaylist": {
+          "image": "",
+          "subtypes": null,
+          "title": "Guided Relaxation"
+        },
+        "sleepBehaviorBased": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Behavior-based"
+        },
+        "sleepChallenges": {
+          "image": "",
+          "subtypes": null,
+          "title": "Sleep Challenges"
+        },
+        "sleepConditionBased": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Condition-based"
+        },
+        "sleepDiary": {
+          "image": "",
+          "subtypes": null,
+          "title": "Sleep Diary"
+        },
+        "sleepEducation": {
+          "image": "",
+          "subtypes": null,
+          "title": "Sleep Education"
+        },
+        "sleepEducationArticles": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Articles"
+        },
+        "sleepImpacts": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Sleep Impacts"
+        },
+        "sleepImprovement": {
+          "image": "",
+          "subtypes": null,
+          "title": "Sleep Improvement"
+        },
+        "sleepPharmacology": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Sleep Pharmacology"
+        },
+        "sleepRippleEffects": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Ripple Effects"
+        },
+        "sleepSanctuary": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Sleep Sanctuary"
+        },
+        "sleepTools": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Sleep Supplements"
+        },
+        "sleepWindDownRoutine": {
+          "image": "",
+          "subtypes": [
+            "noDate"
+          ],
+          "title": "Wind Down Routine"
+        }
+        }
+
+        },
+
+        "remove":{
+        "featureHubs": {
+        "life2": {
+          "components": [
+            {
+              "payload": {
+                "cards": [
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvApps/changeMe/files/Sleep%20Hygiene-23dec.png",
+                    "featureID": "sleepHygiene"
+                  },
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvApps/changeMe/files/Sleep%20Supplements-23dec.png",
+                    "featureID": "sleepSupplements"
+                  },
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvApps/changeMe/files/Sleep%20Disorders-23dec.png",
+                    "featureID": "shiftWorkSleepDisorders"
+                  },
+                  {
+                    "backgroundImageURL": "https://cdn.myocv.com/ocvApps/changeMe/files/Sleep%20Log-23dec.png",
+                    "featureID": "sleepLog"
+                  }
+                ]
+              }
+              }
+            
+          ]
+        }
+      }
+        }
+    }
+    }

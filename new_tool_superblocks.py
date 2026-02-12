@@ -11,6 +11,7 @@ IGNORED_KEYS = {
     "analyticsName",
     "appID",
     "backgroundImageURL",
+    "textHex",
 }
 IGNORED_PREFIXES = {"30", "demo", "TEST", "OLD", "_", "tier"}
 OCCV_APPS_RE = re.compile(r"/ocvapps/[^/]+/", re.IGNORECASE)
@@ -113,6 +114,87 @@ def _list_key(item: Any) -> Any:
     except TypeError:
         return ("repr", repr(item))
 
+def _structure_skeleton(node: Any, path: List[str]) -> Any:
+    """
+    Keep only container nodes (dict/list). Strip scalars entirely.
+    Dicts keep keys (excluding IGNORED_KEYS) but only recurse into container children.
+    Lists are represented as [] (presence of a list node).
+    """
+    if isinstance(node, dict):
+        out: Dict[str, Any] = {}
+        for k, v in node.items():
+            if k in IGNORED_KEYS:
+                continue
+            if isinstance(v, (dict, list)):
+                out[k] = _structure_skeleton(v, path + [k])
+        return out
+    if isinstance(node, list):
+        return []
+    return None  # scalars removed
+
+
+def diff_structure(current: Any, master: Any, path: List[str]) -> Optional[Any]:
+    """
+    Structure-only diff:
+    - Ignore scalar diffs completely.
+    - Report only container nodes that are extra/missing/type-mismatched.
+    - For dicts: recurse into keys; for missing keys, emit master's container skeleton.
+    - For lists: only compare node type/presence; ignore element-level differences.
+    """
+
+    # If master expects a container but current is missing entirely
+    if master is None:
+        # current is "extra" relative to master: only report if it's a container
+        if isinstance(current, (dict, list)):
+            sk = _structure_skeleton(current, path)
+            # If skeleton is empty dict {}, keep it as {} to mark node exists
+            return sk
+        return None
+
+    # If master is dict
+    if isinstance(master, dict):
+        if not isinstance(current, dict):
+            # type mismatch: master expects dict structure here
+            return _structure_skeleton(master, path) or {}
+        result: Dict[str, Any] = {}
+        changed = False
+
+        # Look at keys in current: report extra container keys
+        for k, c_val in current.items():
+            if k in IGNORED_KEYS:
+                continue
+            if k not in master:
+                if isinstance(c_val, (dict, list)):
+                    result[k] = _structure_skeleton(c_val, path + [k]) or {}
+                    changed = True
+                continue
+
+            m_val = master.get(k)
+            child = diff_structure(c_val, m_val, path + [k])
+            if child is not None:
+                result[k] = child
+                changed = True
+
+        # Also check keys that exist in master but are missing in current (only for containers)
+        for k, m_val in master.items():
+            if k in IGNORED_KEYS:
+                continue
+            if k not in current and isinstance(m_val, (dict, list)):
+                result[k] = _structure_skeleton(m_val, path + [k]) or {}
+                changed = True
+
+        return result if changed else None
+
+    # If master is list
+    if isinstance(master, list):
+        if not isinstance(current, list):
+            # type mismatch: master expects list node here
+            return []  # represent list node mismatch
+        # both lists -> structure OK; ignore element diffs
+        return None
+
+    # master is scalar: ignore all scalar diffs
+    return None
 
 def diff(current: Any, master: Any, path: List[str]) -> Optional[Any]:
     """
@@ -211,36 +293,31 @@ def build_diff(
     diff_app: Dict[str, Any] = {}
     diff_count_app: Dict[str, int] = {}
     prefixes: Dict[str, str] = {}
+
     mode_lower = mode.lower()
-    audit_mode = mode_lower == "audit"
+
+    audit_text = mode_lower in ("audit", "audit-text")
+    audit_structure = mode_lower == "audit-structure"
+    audit_mode = audit_text or audit_structure
+
     compute_diffs = audit_mode or mode_lower == "merge"
 
+    # ✅ choose diff behavior once (no early return)
+    diff_fn = diff_structure if audit_structure else diff
+
     for header in input_headers:
-        manifest = (
-            input_manifest.get(header) if isinstance(input_manifest, dict) else None
-        )
+        manifest = input_manifest.get(header) if isinstance(input_manifest, dict) else None
         master_root = master
+
         if compute_diffs:
-            overlay_from_app = (
-                diff(manifest, master_root, []) if manifest is not None else None
-            )
+            overlay_from_app = diff_fn(manifest, master_root, []) if manifest is not None else None
             diff_app[header] = overlay_from_app if overlay_from_app is not None else {}
-            diff_count_app[header] = (
-                count_nodes(overlay_from_app) if overlay_from_app is not None else 0
-            )
+            diff_count_app[header] = count_nodes(overlay_from_app) if overlay_from_app is not None else 0
 
             if audit_mode:
-                overlay_from_master = (
-                    diff(master_root, manifest, []) if master_root is not None else None
-                )
-                diff_master[header] = (
-                    overlay_from_master if overlay_from_master is not None else {}
-                )
-                diff_count_master[header] = (
-                    count_nodes(overlay_from_master)
-                    if overlay_from_master is not None
-                    else 0
-                )
+                overlay_from_master = diff_fn(master_root, manifest, []) if master_root is not None else None
+                diff_master[header] = overlay_from_master if overlay_from_master is not None else {}
+                diff_count_master[header] = count_nodes(overlay_from_master) if overlay_from_master is not None else 0
             else:
                 diff_count_master[header] = 0
         else:
@@ -253,10 +330,7 @@ def build_diff(
                 prefixes[header] = prefix
 
     if audit_mode:
-        diff_overlay: Dict[str, Any] = {
-            "diff_app": diff_app,
-            "diff_master": diff_master,
-        }
+        diff_overlay: Dict[str, Any] = {"diff_app": diff_app, "diff_master": diff_master}
     elif compute_diffs:
         diff_overlay = diff_app
     else:
@@ -265,32 +339,56 @@ def build_diff(
     return diff_overlay, diff_count_master, diff_count_app, prefixes
 
 
-# ---------- Merge ----------
-def merge_overlay_into_master(master: Any, overlay: Any, path: List[str]) -> Any:
-    if overlay is None:
-        return copy.deepcopy(master)
 
+# ---------- Merge ----------
+def merge_overlay_into_master(master, overlay, path):
+    """
+    Merge overlay into master while enforcing branch alignment:
+    - Walk shared paths first
+    - Only create new structure at the first missing master node
+    """
+
+    # No overlay → nothing to do
+    if overlay is None:
+        return master
+
+    # If master does not exist, overlay defines the subtree
+    if master is None:
+        return copy.deepcopy(overlay)
+
+    # Dict merge
     if isinstance(master, dict) and isinstance(overlay, dict):
         result = copy.deepcopy(master)
+
         for k, o_val in overlay.items():
             if k in result:
-                result[k] = merge_overlay_into_master(result[k], o_val, path + [k])
+                # Same branch → recurse
+                result[k] = merge_overlay_into_master(
+                    result[k],
+                    o_val,
+                    path + [k],
+                )
             else:
+                # First divergence → allow creation ONCE
                 result[k] = copy.deepcopy(o_val)
+
         return result
 
+    # List merge (lists are treated as sets)
     if isinstance(master, list) and isinstance(overlay, list):
         result = copy.deepcopy(master)
-        seen_norms = {normalize(m, path) for m in result}
+        seen = {normalize(x, path) for x in result}
+
         for o in overlay:
-            norm_o = normalize(o, path)
-            if norm_o in seen_norms:
-                continue
-            seen_norms.add(norm_o)
-            result.append(copy.deepcopy(o))
+            n = normalize(o, path)
+            if n not in seen:
+                seen.add(n)
+                result.append(copy.deepcopy(o))
+
         return result
 
-    return copy.deepcopy(overlay)
+    # Scalar conflict → keep master (per README)
+    return master
 
 
 def _replace_placeholders(node: Any, app_id: str, prefix: Optional[str]) -> Any:
@@ -309,24 +407,50 @@ def _replace_placeholders(node: Any, app_id: str, prefix: Optional[str]) -> Any:
 
 
 def merge_outputs(
-    master: Dict[str, Any],
-    overlays: Dict[str, Any],
-    input_headers: List[str],
-    prefixes: Dict[str, str],
+    master_json: dict,
+    diff_output: dict,
+    prefixes: dict,
     app_id: str,
-) -> Dict[str, Any]:
-    merged = {"manifest": {}}
-    for header in input_headers:
-        overlay = overlays.get(header)
-        base = master.get(header) if isinstance(master, dict) else {}
-        compiled = merge_overlay_into_master(base, overlay, [])
+) -> dict:
+    """
+    Merge execution:
+
+    - For each header in diff_app:
+        - clone the full master
+        - apply that header's overlay
+        - emit as output.manifest[header]
+    """
+
+    master = master_json  # full master template
+
+    out = {"manifest": {}}
+
+    for header, header_overlay in diff_output.items():
+        # 1. clone the master (THIS IS THE CRITICAL FIX)
+        merged = copy.deepcopy(master)
+
+        # 2. apply header-specific overlay
+        merged = merge_overlay_into_master(
+            merged,
+            header_overlay,
+            path=[header],
+        )
+
+        # 3. finalize
         prefix = prefixes.get(header)
-        merged["manifest"][header] = _replace_placeholders(compiled, app_id, prefix)
-    return merged
+        out["manifest"][header] = _replace_placeholders(
+            merged,
+            app_id,
+            prefix,
+        )
+
+    return out
 
 
 
-def _remove_list_items_in_place(current_list: List[Any], remove_list: List[Any], path: List[str]) -> None:
+def _remove_list_items_in_place(
+    current_list: List[Any], remove_list: List[Any], path: List[str]
+) -> None:
     """Treat lists as sets (order-insensitive). Remove any items from current_list that match items in remove_list."""
     if not current_list or not remove_list:
         return
@@ -339,6 +463,8 @@ def _remove_list_items_in_place(current_list: List[Any], remove_list: List[Any],
         kept.append(item)
 
     current_list[:] = kept
+
+
 def _matches_remove_pattern(target: Any, pattern: Any, path: List[str]) -> bool:
     """
     Returns True if 'target' matches 'pattern' as a subset, for the purpose of removal.
@@ -373,7 +499,10 @@ def _matches_remove_pattern(target: Any, pattern: Any, path: List[str]) -> bool:
     # scalar
     return meaningfully_equal(target, pattern, path)
 
-def _apply_remove_list_by_pattern(current_list: List[Any], remove_list: List[Any], path: List[str]) -> None:
+
+def _apply_remove_list_by_pattern(
+    current_list: List[Any], remove_list: List[Any], path: List[str]
+) -> None:
     if not current_list or not remove_list:
         return
 
@@ -403,8 +532,9 @@ def _apply_remove_list_by_pattern(current_list: List[Any], remove_list: List[Any
                 _apply_remove(item, pat, path + ["<list-item>"])
 
     # (3) Cleanup empty dicts left behind
-    current_list[:] = [x for x in current_list if not (isinstance(x, dict) and len(x) == 0)]
-
+    current_list[:] = [
+        x for x in current_list if not (isinstance(x, dict) and len(x) == 0)
+    ]
 
 
 def _apply_remove(current: Any, remove_spec: Any, path: List[str]) -> Any:
@@ -448,7 +578,6 @@ def _apply_remove(current: Any, remove_spec: Any, path: List[str]) -> Any:
         return current
 
     return current
-
 
 
 def _strip_insert_index(node: Any) -> Any:
@@ -509,7 +638,9 @@ def _list_update_with_optional_insert_index(
                 _apply_update(target, patch, path + [f"[{idx}]"])
             elif isinstance(target, list) and isinstance(patch, list):
                 # patch list into target list (add missing items)
-                _list_update_with_optional_insert_index(target, patch, path + [f"[{idx}]"])
+                _list_update_with_optional_insert_index(
+                    target, patch, path + [f"[{idx}]"]
+                )
             else:
                 # Type mismatch or scalar target: do not override
                 pass
@@ -527,7 +658,6 @@ def _list_update_with_optional_insert_index(
             continue
         seen.add(n)
         current_list.append(copy.deepcopy(item))
-
 
 
 def _apply_update(current: Any, update_spec: Any, path: List[str]) -> Any:
@@ -634,7 +764,6 @@ def update_file(
     return {"manifest": updated_manifest}
 
 
-
 # ---------- Logging ----------
 def write_console_log(
     input_headers: List[str],
@@ -662,9 +791,7 @@ def write_console_log(
     print("\n".join(lines))
 
 
-# ---------- Superblocks pipeline (no main) ----------
 app_id = Input220.value
-
 input_manifest_raw = parse_json_maybe_double_encoded(
     FilePicker1.files[0]["readContents"]()
 )
@@ -679,19 +806,22 @@ master = unwrap_manifest(master_raw)
 input_headers = select_app_headers(input_manifest)
 mode_lower = mode.lower()
 
+
 if mode_lower == "update":
     modified = update_file(master, input_manifest, input_headers, mode_lower)
     return modified
 
+# Build diffs for merge + both audit modes
 diff_overlay, diff_count_master, diff_count_app, prefixes = build_diff(
     input_manifest, master, input_headers, mode
 )
 
 write_console_log(input_headers, diff_count_app, diff_count_master)
 
-if mode_lower == "audit":
+# Both audit modes return raw diff output
+if mode_lower in ("audit-text", "audit-structure"):
     return diff_overlay
 
-merged_output = merge_outputs(master, diff_overlay, input_headers, prefixes, app_id)
+merged_output = merge_outputs(master, diff_overlay, prefixes, app_id)
 
 return merged_output
